@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha384-GLhlTQ8iN17Sme8k0I7Zf5n9MqSOovv+5O6unNTt/iRYbYjHpWWr12woJ2Imq" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./custom.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha384-GLhlTQ8iN17Sme8k0I7Zf5n9MqSOovv+5O6unNTt/iRYbYjHpWWr12woJ2Imq" crossorigin="anonymous">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Diabetes</title>
+</head>
+
+<body>
+    <!-- -----------------------------------------------------------navbar-section--------------------------------------------------------- -->
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light nav-bg">
+            <div class="container">
+                <a class="navbar-brand mx-md-0 mx-lg-3 mx-0" href="#"><img src="./images/logo-dr.png" alt="logo"
+                        style="height: 50px;"></a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-0 mb-lg-0" style="margin-left: 10px; font-weight: 600;">
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" aria-current="page" href="./index.html"
+                                data-lang="en:Home;te:హోం">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" href="./about.html"
+                                data-lang="en:About us;te:మాకు గురించి">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" href="./service.html"
+                                data-lang="en:Services;te:సేవలు">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" href="./patient.html"
+                                data-lang="en:Mindful Patients;te:మనస్తాపాలు">Mindful Patients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" href="./contact.html"
+                                data-lang="en:Contact Us;te:మాకు సంప్రదించండి">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" href="./blogs.html"
+                                data-lang="en:Blogs;te:బ్లాగులు‌">Blogs</a>
+                        </li>
+                        <li class="nav-item d-block d-lg-none">
+                            <a class="nav-link me-4 text-white" href="./appointment.htm l"
+                                data-lang="en:Book Appointment;te:బుక్ అపాయింట్‌">Book Appointment</a>
+                        </li>
+                        <li class="nav-item d-block d-lg-none">
+                            <button class="lang-btn">
+                                <select
+                                    style="background-color: #ec2763; border: none; outline: none; width: 50px; color: #fff;"
+                                    id="languageSelect" onchange="setLanguage(this.value)"">
+                                    <option class=" text-white" value="en">Eng</option>
+                                    <option class="text-white" value="te">Tel</option>
+                                </select>
+                            </button>
+                        </li>
+                    </ul>
+                    <button class="d-none d-lg-block nav-btn" id="appointmentBtn">
+                        <a class="nav-link text-white" href="#" ata-lang="en:Book Appointment;te:బుక్ అపాయింట్">Book
+                            Appointment</a>
+                    </button>
+                    <div class="nav-item" style="margin-right: -6%; font-size: 24px;">
+                        <a class="nav-link me-1 text-white" href="https://web.whatsapp.com/"><i
+                                class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="lang-btn d-none d-lg-block">
+                <select style="background-color: #ec2763; border: none; outline: none; width: 50px; color: #fff;"
+                    id="languageSelect" onchange="setLanguage(this.value)"">
+                    <option class=" text-white" value="en">Eng</option>
+                    <option class="text-white" value="te">Tel</option>
+                </select>
+            </button>
+        </nav>
+    </section>
+
+    <section>
+        <div class="appointment-form" id="appointmentForm">
+            <span class="close-icon" id="closeIcon">&times;</span>
+            <h2>Doctor Appointment Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}"><br>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required><br>
+                <label for="preferredDate">Preferred Date:</label>
+                <input type="date" id="preferredDate" name="preferredDate" required><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!-- -----------------------------------------------------------Service-section--------------------------------------------------------- -->
+    <!-- <section class="Service-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div><img src="./images/Service-banner.png" alt="" class="Service-img"></div>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="Service-heading"
+                        data-lang="en:Patient Centered Diabetic Care;te:రోగి కేంద్రిత డయాబెటిక్ సేవ">Patient Centered
+                        Diabetic Care</h1>
+                    <p class="Service-para"
+                        data-lang="en:Diabetes care demands ongoing teamwork between healthcare providers and patients. This involves shared decision-making, optimizing treatment plans, and emphasizing self-care practices like diet, exercise, preventive measures, medication adherence, and self-monitoring. Regular communication is vital for personalized and effective diabetes management.;te:డయాబెటీస్ కేర్ చికిత్స ప్రతిసారితో ఆహార సేవ సాహచర్యం, బాధ్యత పూరితం, మరియు స్వీయ మార్గదర్శనను అందించే సమాన కార్యబలం అవసరం. ఈ లక్షణాలు ఆహార పథకం, వ్యాయామం, ప్రెవెంటివ్ చర్యలు, ఔషధ అనుకూలత, మరియు స్వీయ నిర్వహణను ప్రాధాన్యం చేసేందుకు. వ్యక్తిగత మరియు అనానురూప డయాబెటిస్ నిర్వహణకు సాక్ష్యం సంప్రదించడానికి నియమించాల్సింది.">
+                        Diabetes care demands ongoing teamwork between healthcare providers and patients. This involves
+                        shared decision-making, optimizing treatment plans, and emphasizing self-care practices like
+                        diet, exercise, preventive measures, medication adherence, and self-monitoring. Regular
+                        communication is vital for personalized and effective diabetes management.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- -----------------------------------------------------------Diabetes-Service-section--------------------------------------------------------- -->
+    <section class="bg-service">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"></div>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+        </div>
+    </section>
+    <!-- -------------------------------------------------------------service-update-section------------------------------------------------------------- -->
+    <section class="service-update-section">
+        <div class="container">
+            <h2 class="card-heading">Our Services</h2>
+            <div class="row p-0 m-0">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card-section1 card-1">
+                        <div class="card-section2">
+                            <h1>Consultation</h1>
+                            <p> Our expert team provides personalized consultations to assess your diabetic condition,
+                                address
+                                concerns, and devise a comprehensive management plan tailored to your needs.</p>
+                            <div class="d-flex justify-content-end">
+                                <button class="new-button">
+                                    <span>Read More</span>
+                                    <svg width="24" height="24" viewBox="0 0 74 74" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                        <path
+                                            d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                            fill="black"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card-section1 card-2">
+                        <div class="card-section2">
+                            <h1>Retina Checkup</h1>
+                            <p>
+                                Protect your vision with regular retina checkups conducted by our specialized eye care
+                                professionals, aimed at detecting and managing diabetic retinopathy, a common
+                                complication
+                                of diabetes.
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <button class="new-button">
+                                    <span>Read More</span>
+                                    <svg width="24" height="24" viewBox="0 0 74 74" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                        <path
+                                            d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                            fill="black"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card-section1 card-3">
+                        <div class="card-section2">
+                            <h1>Diet Planning</h1>
+                            <p>Our certified dietitians specialize in creating customized meal plans that align with
+                                your
+                                dietary
+                                preferences and health goals, empowering you to manage your diabetes effectively through
+                                nutrition.</p>
+                            <div class="d-flex justify-content-end">
+                                <button class="new-button">
+                                    <span>Read More</span>
+                                    <svg width="24" height="24" viewBox="0 0 74 74" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                        <path
+                                            d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                            fill="black"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card-section1 card-1">
+                        <div class="card-section2">
+                            <h1>Consultation</h1>
+                            <p> Our expert team provides personalized consultations to assess your diabetic condition,
+                                address
+                                concerns, and devise a comprehensive management plan tailored to your needs.</p>
+                            <div class="d-flex justify-content-end">
+                                <button class="new-button">
+                                    <span>Read More</span>
+                                    <svg width="24" height="24" viewBox="0 0 74 74" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                        <path
+                                            d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                            fill="black"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card-section1 card-2">
+                        <div class="card-section2">
+                            <h1>Retina Checkup</h1>
+                            <p>
+                                Protect your vision with regular retina checkups conducted by our specialized eye care
+                                professionals, aimed at detecting and managing diabetic retinopathy, a common
+                                complication
+                                of diabetes.
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <button class="new-button">
+                                    <span>Read More</span>
+                                    <svg width="24" height="24" viewBox="0 0 74 74" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                        <path
+                                            d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                            fill="black"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card-section1 card-3">
+                        <div class="card-section2">
+                            <h1>Diet Planning</h1>
+                            <p>Our certified dietitians specialize in creating customized meal plans that align with
+                                your
+                                dietary
+                                preferences and health goals, empowering you to manage your diabetes effectively through
+                                nutrition.</p>
+                            <div class="d-flex justify-content-end">
+                                <button class="new-button">
+                                    <span>Read More</span>
+                                    <svg width="24" height="24" viewBox="0 0 74 74" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                        <path
+                                            d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                            fill="black"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------------------------------------Service-section------------------------------------------------------------- -->
+    <section class="section1">
+        <div class="row p-0 m-0">
+            <h2 class="section-heading">Our Services</h2>
+        </div>
+        <div class="row justify-content-center p-0 m-0">
+            <div class="column d-flex justify-content-center">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <img src="./images/talk.png" class="img-fluid">
+                    </div>
+                    <h3>Consultation</h3>
+                    <p>
+                        Our expert team provides personalized consultations to assess your diabetic condition,
+                        address
+                        concerns, and devise a comprehensive management plan tailored to your needs.
+                    </p>
+                </div>
+            </div>
+            <div class="column d-flex justify-content-center">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <img src="./images/support.png" class="img-fluid">
+                    </div>
+                    <h3>Diabetic Educator Support</h3>
+                    <p>
+                        Receive guidance and support from our diabetic educators who offer valuable insights,
+                        practical tips,
+                        and ongoing education to help you understand and manage your diabetes better.
+                    </p>
+                </div>
+            </div>
+            <div class="column d-flex justify-content-center">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <img src="./images/analysis.png" class="img-fluid">
+                    </div>
+                    <h3>Continuous Glucose Monitoring (CGM) Application and Analysis</h3>
+                    <p>
+                        Utilize the latest technology in continuous glucose monitoring with our assistance in
+                        applying CGM
+                        devices and analyzing the data to gain valuable insights into your blood sugar trends and
+                        patterns.
+                    </p>
+                </div>
+            </div>
+            <div class="column d-flex justify-content-center">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <img src="./images/plan.png" class="img-fluid">
+                    </div>
+                    <h3>Diet Planning</h3>
+                    <p>
+                        Our certified dietitians specialize in creating customized meal plans that align with your
+                        dietary
+                        preferences and health goals, empowering you to manage your diabetes effectively through
+                        nutrition.
+                    </p>
+                </div>
+            </div>
+            <div class="column d-flex justify-content-center">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <img src="./images/unity.png" class="img-fluid">
+                    </div>
+                    <h3>Support Groups</h3>
+                    <p>
+                        Join our supportive community of individuals living with diabetes to share experiences, gain
+                        encouragement, and access valuable resources for navigating the challenges of diabetes
+                        management
+                        together.
+                    </p>
+                </div>
+            </div>
+            <div class="column d-flex justify-content-center">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <img src="./images/examination.png" class="img-fluid">
+                    </div>
+                    <h3>Retina Checkup</h3>
+                    <p>
+                        Protect your vision with regular retina checkups conducted by our specialized eye care
+                        professionals, aimed at detecting and managing diabetic retinopathy, a common complication
+                        of diabetes.
+                    </p>
+                </div>
+            </div>
+            <div class="column d-flex justify-content-center">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <img src="./images/analysis.png" class="img-fluid">
+                    </div>
+                    <h3>Erectile Dysfunction Test</h3>
+                    <p>
+                        Address the sensitive issue of erectile dysfunction by undergoing comprehensive testing and
+                        receiving personalized treatment recommendations from our empathetic healthcare providers.
+                    </p>
+                </div>
+            </div>
+            <div class="column d-flex justify-content-center">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <img src="./images/plan.png" class="img-fluid">
+                    </div>
+                    <h3>Cardiovascular Services</h3>
+                    <p>
+                        Safeguard your heart health with our range of cardiovascular services, including risk
+                        assessments, diagnostic tests, and lifestyle interventions tailored to reduce your risk of heart
+                        disease associated with diabetes.
+                    </p>
+                </div>
+            </div>
+            <div class="column d-flex justify-content-center">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <img src="./images/unity.png" class="img-fluid">
+                    </div>
+                    <h3>Foot Care Management</h3>
+                    <p>
+                        Prevent complications such as diabetic foot ulcers and neuropathy by availing of our specialized
+                        foot care services, including regular assessments, education on proper foot care, and timely
+                        interventions.
+                    </p>
+                </div>
+            </div>
+            <div class="column d-flex justify-content-center">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <img src="./images/examination.png" class="img-fluid">
+                    </div>
+                    <h3>Medication Management</h3>
+                    <p>
+                        Receive expert guidance on medication options, dosage adjustments, and adherence strategies to
+                        effectively manage your diabetes and prevent complications while optimizing your overall
+                        well-being.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------------------------------------------footer-section--------------------------------------------------------- -->
+    <section>
+        <footer class="hero pb-3 pb-md-4 pt-3 pt-md-5">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-5 col-md-4">
+                        <div class="container__about ">
+                            <img src="./images/logo-dr.png" alt="" class="img-fluid footer-logo mb-0">
+                            <p class="footer-tag-line">Your Path to Longevity Begins Here!</p>
+                            <div class="icons">
+                                <a href="#" class="icon1 icon--instagram  text-decoration-none">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="icon1 icon--twitter  text-decoration-none">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="icon1 icon--linkedin  text-decoration-none">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="icon1 icon--linkedin  text-decoration-none">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-2 col-md-2  col-5">
+                        <div class="container__recentpages">
+                            <h2 class="footer-heading">Links</h2>
+                            <ul class="list-unstyled">
+                                <li><a class="footer-links" href="./index.html">Home </a></li>
+                                <li><a class="footer-links" href="./about.html">About Us</a></li>
+                                <li><a class="footer-links" href="./service.html">Services</a></li>
+                                <li><a class="footer-links" href="./patient.html">Patient Education</a></li>
+                                <li><a class="footer-links" href="./contact.html">Contact us</a></li>
+                                <li><a class="footer-links" href="./blogs.html">Blogs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3  col-7">
+                        <div class="container__more">
+                            <h2 class="footer-heading">Services</h2>
+                            <ul class="list-unstyled">
+                                <li><a class="footer-links" href=''>Diabetic Foot Clinic</a></li>
+                                <li><a class="footer-links" href="'">Cholesterol Control Clinic</a></li>
+                                <li><a class="footer-links" href="">Hypertension Clinic</a></li>
+                                <li><a class="footer-links" href="">Retinopathy Clinic</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12">
+
+                        <h2 class="footer-heading ">Get In Touch</h2>
+                        <p class="footer-links m-0 ">Kurnool, Andhra Pradesh.</p>
+                        <p class="footer-links m-0"> Phone:
+
+                        </p>
+                        <p class="footer-links m-0"><a class="footer-links" href="">info@gmail.com</a></p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="line__separete"></div>
+            </div>
+
+            <div class="by d-flex container text-center  mx-auto">
+                <p class="order-1 order-md-0 py-3 py-md-0"> @2024 KraftBees Technologies Private
+                    Limited. all rights reserved</p>
+
+            </div>
+
+        </footer>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="path/to/jquery.min.js"></script>
+
+    <!-- Bootstrap JS Bundle (includes Popper.js) -->
+    <script src="path/to/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#carouselExampleInterval').carousel();
+        });
+    </script>
+
+    <script>
+        function setLanguage(lang) {
+            // Get all elements that need their content to be changed based on language
+            var elementsToTranslate = document.querySelectorAll('[data-lang]');
+
+            // Iterate over each element and update its content based on the selected language
+            elementsToTranslate.forEach(function (element) {
+                var translations = element.dataset.lang.split(';');
+                translations.forEach(function (translation) {
+                    var parts = translation.split(':');
+                    if (parts.length === 2) {
+                        if (parts[0] === lang) {
+                            element.innerHTML = parts[1];
+                        }
+                    }
+                });
+            });
+
+            // Optionally, you can also set the document language attribute
+            document.documentElement.lang = lang;
+
+            var language = document.getElementById("languageSelect").value;
+            if (language === "en") {
+                document.getElementById("headingEnglish").style.display = "block";
+                document.getElementById("headingTelugu").style.display = "none";
+                document.getElementById("textEnglish").style.display = "block";
+                document.getElementById("textTelugu").style.display = "none";
+            } else if (language === "te") {
+                document.getElementById("headingEnglish").style.display = "none";
+                document.getElementById("headingTelugu").style.display = "block";
+                document.getElementById("textEnglish").style.display = "none";
+                document.getElementById("textTelugu").style.display = "block";
+            }
+        }
+
+
+    </script>
+
+    <script>
+        // JavaScript to toggle the visibility of the appointment form
+        const appointmentBtn = document.getElementById('appointmentBtn');
+        const appointmentForm = document.getElementById('appointmentForm');
+        const closeIcon = document.getElementById('closeIcon');
+
+        appointmentBtn.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default behavior of the link
+            appointmentForm.style.display = 'block';
+        });
+
+        closeIcon.addEventListener('click', function () {
+            appointmentForm.style.display = 'none';
+        });
+    </script>
+
+
+</body>
+
+</html>

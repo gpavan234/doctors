@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha384-GLhlTQ8iN17Sme8k0I7Zf5n9MqSOovv+5O6unNTt/iRYbYjHpWWr12woJ2Imq" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./custom.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha384-GLhlTQ8iN17Sme8k0I7Zf5n9MqSOovv+5O6unNTt/iRYbYjHpWWr12woJ2Imq" crossorigin="anonymous">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Diabetes</title>
+</head>
+
+<body>
+    <!-- -----------------------------------------------------------navbar-section--------------------------------------------------------- -->
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light nav-bg">
+            <div class="container">
+                <a class="navbar-brand mx-md-0 mx-lg-3 mx-0" href="#"><img src="./images/logo-dr.png" alt="logo"
+                        style="height: 50px;"></a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-0 mb-lg-0" style="margin-left: 10px; font-weight: 600;">
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" aria-current="page" href="./index.html"
+                                data-lang="en:Home;te:హోం">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" href="./about.html"
+                                data-lang="en:About us;te:మాకు గురించి">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" href="./service.html"
+                                data-lang="en:Services;te:సేవలు">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" href="./patient.html"
+                                data-lang="en:Mindful Patients;te:మనస్తాపాలు">Mindful Patients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" href="./contact.html"
+                                data-lang="en:Contact Us;te:మాకు సంప్రదించండి">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" href="./blogs.html"
+                                data-lang="en:Blogs;te:బ్లాగులు‌">Blogs</a>
+                        </li>
+                        <li class="nav-item d-block d-lg-none">
+                            <a class="nav-link me-4 text-white" href="./appointment.htm l"
+                                data-lang="en:Book Appointment;te:బుక్ అపాయింట్‌">Book Appointment</a>
+                        </li>
+                        <li class="nav-item d-block d-lg-none">
+                            <button class="lang-btn">
+                                <select
+                                    style="background-color: #ec2763; border: none; outline: none; width: 50px; color: #fff;"
+                                    id="languageSelect" onchange="setLanguage(this.value)"">
+                                    <option class=" text-white" value="en">Eng</option>
+                                    <option class="text-white" value="te">Tel</option>
+                                </select>
+                            </button>
+                        </li>
+                    </ul>
+                    <button class="d-none d-lg-block nav-btn" id="appointmentBtn">
+                        <a class="nav-link text-white" href="#" ata-lang="en:Book Appointment;te:బుక్ అపాయింట్">Book
+                            Appointment</a>
+                    </button>
+                    <div class="nav-item" style="margin-right: -6%; font-size: 24px;">
+                        <a class="nav-link me-1 text-white" href="https://web.whatsapp.com/"><i
+                                class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="lang-btn d-none d-lg-block">
+                <select style="background-color: #ec2763; border: none; outline: none; width: 50px; color: #fff;"
+                    id="languageSelect" onchange="setLanguage(this.value)"">
+                    <option class=" text-white" value="en">Eng</option>
+                    <option class="text-white" value="te">Tel</option>
+                </select>
+            </button>
+        </nav>
+    </section>
+
+    <section>
+        <div class="appointment-form" id="appointmentForm">
+            <span class="close-icon" id="closeIcon">&times;</span>
+            <h2>Doctor Appointment Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}"><br>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required><br>
+                <label for="preferredDate">Preferred Date:</label>
+                <input type="date" id="preferredDate" name="preferredDate" required><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!-- -----------------------------------------------------------Contact-Section-------------------------------------------------------- -->
+    <section>
+        <div class="container">
+            <div class="row  align-items-center">
+                <div class="col-lg-6 col-md-12 px-0">
+                    <div class="d-flex flex-column justify-content-center contact-left">
+                        <h1 class="contact-heading">Schedule an Appointment</h1>
+                        <p class="contact-pera">Take the first step towards your ideal living space – schedule an<br />
+                            appointment now to bring your interior design dreams to fruition.
+                        </p>
+                        <div class="d-flex align-items-center mb-4">
+                            <svg color="red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="svg-color">
+                                <path d="M21,8h-7V6h7V8z"></path>
+                                <path d="M12,7l4,4V3L12,7z"></path>
+                                <path
+                                    d="M20.023,15.488c-0.63-0.015-1.423-0.052-1.924-0.14c-0.542-0.096-1.194-0.282-1.653-0.425	c-0.36-0.112-0.752-0.013-1.019,0.253L13.21,17.38c-1.532-0.807-2.759-1.747-3.798-2.792c-1.045-1.039-1.985-2.266-2.792-3.798	l2.204-2.218C9.09,8.305,9.189,7.913,9.077,7.553c-0.142-0.458-0.329-1.11-0.424-1.652C8.564,5.4,8.528,4.607,8.512,3.977	C8.499,3.432,8.055,3,7.51,3H4C3.562,3,3,3.328,3,4c0,4.539,1.84,8.874,4.966,12.034C11.126,19.16,15.461,21,20,21	c0.672,0,1-0.562,1-1v-3.51C21,15.945,20.568,15.501,20.023,15.488z">
+                                </path>
+                            </svg>
+                            <div>
+                                <p> <a class="contact-moblile-no" href="#"> +91-9876543210 </a></p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="svg-color">
+                                <path
+                                    d="M 12 2 C 6.4886661 2 2 6.4886661 2 12 C 2 17.511334 6.4886661 22 12 22 L 17 22 L 17 20 L 12 20 C 7.5693339 20 4 16.430666 4 12 C 4 7.5693339 7.5693339 4 12 4 C 16.430666 4 20 7.5693339 20 12 L 20 13.5 C 20 14.340812 19.340812 15 18.5 15 C 17.659188 15 17 14.340812 17 13.5 L 17 12 C 17 9.2504209 14.749579 7 12 7 C 9.2504209 7 7 9.2504209 7 12 C 7 14.749579 9.2504209 17 12 17 C 13.413556 17 14.687859 16.398875 15.599609 15.447266 C 16.230695 16.380863 17.297708 17 18.5 17 C 20.421188 17 22 15.421188 22 13.5 L 22 12 C 22 6.4886661 17.511334 2 12 2 z M 12 9 C 13.668699 9 15 10.331301 15 12 C 15 13.668699 13.668699 15 12 15 C 10.331301 15 9 13.668699 9 12 C 9 10.331301 10.331301 9 12 9 z">
+                                </path>
+                            </svg>
+                            <div>
+                                <p><a class="contact-moblile-no" href="#">info@gmail.com </a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 py-0 col-md-12">
+                    <div class="d-flex flex-column justify-content-center align-content-center  py-4">
+                        <div class="form-design text-start p-5 bg-light">
+                            <div>
+                                <label for="full name" class="label-name">Full Name</label>
+                                <br />
+                                <input type="text" name="full name" placeholder="Your name.." class="input-feild w-100">
+                            </div>
+                            <div>
+                                <label for="Email" class="label-name">Email</label>
+                                <br />
+                                <input type="text" name="Email" placeholder="Enter Email.." class="input-feild w-100">
+                            </div>
+                            <div>
+                                <label for="Phone" class="label-name">Phone</label>
+                                <br />
+                                <input type="text" name="phone" placeholder="Phone Number.." class="input-feild w-100">
+                            </div>
+                            <div>
+                                <label class="label-name">Location:</label>
+                                <br />
+                                <button class="location-btn" onclick="toggleSelection(this)">Kurnool</button>
+                                <button class="location-btn" onclick="toggleSelection(this)">Hyderabad</button>
+                            </div>
+
+                            <div>
+                                <label class="label-name">Preferred Date:</label>
+                                <br />
+                                <input class=" location-btn" type="date" id="preferredDate" name="preferredDate"
+                                    required><br><br>
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn contact-button">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------------------------------------------footer-section--------------------------------------------------------- -->
+    <section>
+        <footer class="hero pb-3 pb-md-4 pt-3 pt-md-5">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-5 col-md-4">
+                        <div class="container__about ">
+                            <img src="./images/logo-dr.png" alt="" class="img-fluid footer-logo mb-0">
+                            <p class="footer-tag-line">Your Path to Longevity Begins Here!</p>
+                            <div class="icons">
+                                <a href="#" class="icon1 icon--instagram  text-decoration-none">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="icon1 icon--twitter  text-decoration-none">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="icon1 icon--linkedin  text-decoration-none">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="icon1 icon--linkedin  text-decoration-none">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-2 col-md-2  col-5">
+                        <div class="container__recentpages">
+                            <h2 class="footer-heading">Links</h2>
+                            <ul class="list-unstyled">
+                                <li><a class="footer-links" href="./index.html">Home </a></li>
+                                <li><a class="footer-links" href="./about.html">About Us</a></li>
+                                <li><a class="footer-links" href="./service.html">Services</a></li>
+                                <li><a class="footer-links" href="./patient.html">Patient Education</a></li>
+                                <li><a class="footer-links" href="./contact.html">Contact us</a></li>
+                                <li><a class="footer-links" href="./blogs.html">Blogs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3  col-7">
+                        <div class="container__more">
+                            <h2 class="footer-heading">Services</h2>
+                            <ul class="list-unstyled">
+                                <li><a class="footer-links" href=''>Diabetic Foot Clinic</a></li>
+                                <li><a class="footer-links" href="'">Cholesterol Control Clinic</a></li>
+                                <li><a class="footer-links" href="">Hypertension Clinic</a></li>
+                                <li><a class="footer-links" href="">Retinopathy Clinic</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12">
+
+                        <h2 class="footer-heading ">Get In Touch</h2>
+                        <p class="footer-links m-0 ">Kurnool, Andhra Pradesh.</p>
+                        <p class="footer-links m-0"> Phone:
+
+                        </p>
+                        <p class="footer-links m-0"><a class="footer-links" href="">info@gmail.com</a></p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="line__separete"></div>
+            </div>
+
+            <div class="by d-flex container text-center  mx-auto">
+                <p class="order-1 order-md-0 py-3 py-md-0"> @2024 KraftBees Technologies Private
+                    Limited. all rights reserved</p>
+
+            </div>
+
+        </footer>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="path/to/jquery.min.js"></script>
+
+    <!-- Bootstrap JS Bundle (includes Popper.js) -->
+    <script src="path/to/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#carouselExampleInterval').carousel();
+        });
+    </script>
+
+    <script>
+        function setLanguage(lang) {
+            // Get all elements that need their content to be changed based on language
+            var elementsToTranslate = document.querySelectorAll('[data-lang]');
+
+            // Iterate over each element and update its content based on the selected language
+            elementsToTranslate.forEach(function (element) {
+                var translations = element.dataset.lang.split(';');
+                translations.forEach(function (translation) {
+                    var parts = translation.split(':');
+                    if (parts.length === 2) {
+                        if (parts[0] === lang) {
+                            element.innerHTML = parts[1];
+                        }
+                    }
+                });
+            });
+
+            // Optionally, you can also set the document language attribute
+            document.documentElement.lang = lang;
+
+            var language = document.getElementById("languageSelect").value;
+            if (language === "en") {
+                document.getElementById("headingEnglish").style.display = "block";
+                document.getElementById("headingTelugu").style.display = "none";
+                document.getElementById("textEnglish").style.display = "block";
+                document.getElementById("textTelugu").style.display = "none";
+            } else if (language === "te") {
+                document.getElementById("headingEnglish").style.display = "none";
+                document.getElementById("headingTelugu").style.display = "block";
+                document.getElementById("textEnglish").style.display = "none";
+                document.getElementById("textTelugu").style.display = "block";
+            }
+        }
+
+
+    </script>
+    <script>
+        // JavaScript to toggle the visibility of the appointment form
+        const appointmentBtn = document.getElementById('appointmentBtn');
+        const appointmentForm = document.getElementById('appointmentForm');
+        const closeIcon = document.getElementById('closeIcon');
+
+        appointmentBtn.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default behavior of the link
+            appointmentForm.style.display = 'block';
+        });
+
+        closeIcon.addEventListener('click', function () {
+            appointmentForm.style.display = 'none';
+        });
+    </script>
+
+    <script>
+        function toggleSelection(button) {
+            // Remove 'selected' class from all buttons
+            var buttons = document.querySelectorAll('.location-btn');
+            buttons.forEach(function (btn) {
+                btn.classList.remove('selected');
+            });
+
+            // Add 'selected' class to the clicked button
+            button.classList.add('selected');
+        }
+    </script>
+
+
+</body>
+
+</html>

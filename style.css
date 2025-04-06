@@ -1,0 +1,4295 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    -text-blue: #09043c;
+    --text-pink: #ec2763;
+    -text-font-clr: #fefeff;
+    -text-highlight: #f7f7fc;
+    -bg-clr: #270571;
+}
+
+/* .navbar-nav li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--text-pink);
+
+    transition: 0.3s ease-out, left 0.3s ease-out;
+}
+ 
+
+.navbar-nav li a:hover::after,
+.navbar-nav li a:focus::after {
+    width: 100%;
+} */
+
+.navbar-nav li a {
+    display: inline-block;
+    position: relative;
+    color: var(--text-pink);
+}
+
+.navbar-nav li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--text-pink);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.navbar-nav li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    width: 100%;
+}
+
+.nav-bg {
+    background-color: #09043c;
+}
+
+.nav-btn {
+    height: 50px;
+    width: 200px;
+    border-radius: 24px;
+    color: #f7f7fc;
+    background-color: #ec2763;
+    border: none;
+    outline: none;
+}
+
+.lang-btn {
+    height: 30px;
+    width: 60px;
+    /* border-radius: 24px; */
+    color: #f7f7fc;
+    background-color: #ec2763;
+    border: none;
+    outline: none;
+    margin-right: 1%;
+}
+
+#languageSelect {
+    background-color: #ec2763;
+    border: none;
+    outline: none;
+    width: 50px;
+    color: #fff;
+}
+
+#languageSelect option {
+    background-color: #ec2763;
+    color: #fff;
+}
+
+#languageSelect option:hover {
+    background-color: #09043c;
+}
+
+/* banner-start */
+.carousel-inner img {
+    width: 100%;
+    height: 655px;
+    border-radius: 0px;
+}
+
+.banner-content {
+    margin-top: 5%;
+}
+
+
+
+/* --------------------------------------who-we-are-section----------------------------------- */
+.who-we-are-section {
+    height: 100vh;
+}
+
+
+.who-we-are-section h1 {
+    margin-top: 7% !important;
+    font-size: 45px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #09043c;
+    position: relative;
+}
+
+.who-we-are-section h1::after {
+    content: "";
+    display: block;
+    width: 15%;
+    height: 5px;
+    /* Adjust the thickness of the underline */
+    background-color: var(--text-pink);
+    position: absolute;
+    bottom: 0;
+    left: 42%;
+    top: 150%;
+    transform: translateX(-0%);
+}
+
+.who-we-are-section .we-are-section-1 {
+    height: 100vh;
+}
+
+.who-we-are-section .we-are-section-1 p {
+    margin-top: 0%;
+    font-size: 18px;
+    max-width: 1250px;
+    line-height: 32px;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    color: #222;
+    /* padding-left: 8%; */
+    padding-right: 8%;
+    /* margin-top: 3%; */
+}
+
+.who-we-are-section .we-are-section-2 {
+    height: 100vh;
+}
+
+.who-we-are-section .we-are-section-2 img {
+    height: 500px;
+    width: 75%;
+    border-radius: 30px;
+}
+
+
+/* ----------------------------------------------------process-section------------------------- */
+.process-section {
+    margin-top: 22%;
+}
+
+.process-heading {
+    margin-top: 7% !important;
+    font-size: 45px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-top: 5%;
+    text-align: center;
+    color: #09043c;
+    position: relative;
+}
+
+.process-heading::after {
+    content: "";
+    display: block;
+    width: 15%;
+    height: 5px;
+    /* Adjust the thickness of the underline */
+    background-color: var(--text-pink);
+    position: absolute;
+    bottom: 0;
+    left: 43%;
+    top: 150%;
+    transform: translateX(-0%);
+}
+
+.process-card-section {
+    margin-top: 10%;
+}
+
+.process-card-clr {
+    background-color: #f7f7fc;
+    height: 320px;
+    width: 380px;
+    padding-top: 30px;
+}
+
+
+.process-card {
+    height: 45vh !important;
+    margin-bottom: 3%;
+    transition: ease 1s;
+
+}
+
+.process-card:hover {
+    transform: scale(1.05);
+}
+
+.process-img {
+    width: 17%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+
+.process-desc {
+    margin: 20px auto 10px;
+    width: 90%;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #09043c;
+}
+
+.process-descrpt {
+    margin: 5px auto 10px;
+    width: 90%;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+
+/* -----------------------------------------------------------------our-culture-section------------------------------------------------- */
+.our-culture-section {
+    height: 100vh;
+    z-index: 0;
+    position: relative;
+    background-color: #09043c;
+    /* Change the background color as needed */
+    color: white;
+}
+
+.our-culture-section h1 {
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: 600;
+    padding-left: 7%;
+    padding-right: 8%;
+    margin-top: 8%;
+}
+
+.our-culture-section p {
+    margin-top: 2%;
+    font-size: 16px;
+    max-width: 1250px;
+    line-height: 1.64;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    color: #222;
+    padding-left: 7%;
+    padding-right: 8%;
+    margin-top: 3%;
+}
+
+.culture-card {
+    width: 80% !important;
+    height: 90vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+    top: 100%;
+    /* Adjust the value to position vertically */
+    left: 40%;
+    /* Adjust the value to position horizontally */
+    transform: translate(-50%, -60%);
+    background-color: #f7f7fc;
+    /* Change the background color as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    padding-top: 5%;
+    padding-left: 5% !important;
+    padding-bottom: 5% !important;
+}
+
+.culture-card img {
+    padding-left: 7%;
+}
+
+.culture-card .main-heading {
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    color: #222;
+}
+
+.culture-card .description {
+    font-size: 14px;
+    color: #999999;
+    font-style: normal;
+    letter-spacing: normal;
+    font-stretch: normal;
+    line-height: 1.64;
+    font-weight: 500;
+    width: 320px;
+    margin-bottom: 10% !important;
+}
+
+/* --------------------------------------Process-we-follow------------------------ */
+.heading {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 45px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-top: 5%;
+    text-align: center;
+    color: #09043c;
+}
+
+.under-line {
+    --col-gap: 2rem;
+    --row-gap: 2rem;
+    --line-w: 0.25rem;
+    display: grid;
+    grid-template-columns: var(--line-w) 1fr;
+    grid-auto-columns: max-content;
+    column-gap: var(--col-gap);
+    list-style: none;
+    width: min(60rem, 90%);
+    margin-inline: auto;
+}
+
+/* line */
+.under-line::before {
+    content: "";
+    grid-column: 1;
+    grid-row: 1 / span 20;
+    background: #09043c;
+    border-radius: calc(var(--line-w) / 2);
+}
+
+/* columns*/
+
+/* row gaps */
+.under-line li:not(:last-child) {
+    margin-bottom: var(--row-gap);
+}
+
+/* card */
+.under-line li {
+    grid-column: 2;
+    --inlineP: 1.5rem;
+    margin-inline: var(--inlineP);
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+}
+
+/* date */
+.under-line li .date {
+    --dateH: 3rem;
+    height: var(--dateH);
+    margin-inline: calc(var(--inlineP) * -1);
+
+    text-align: center;
+    background-color: var(--accent-color);
+
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    display: grid;
+    place-content: center;
+    position: relative;
+
+    border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
+}
+
+/* date flap */
+.under-line li .date::before {
+    content: "";
+    width: var(--inlineP);
+    aspect-ratio: 1;
+    background: var(--accent-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+    position: absolute;
+    top: 100%;
+
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    right: 0;
+}
+
+/* circle */
+.under-line li .date::after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    aspect-ratio: 1;
+    background: var(--bgColor);
+    border: 0.3rem solid var(--accent-color);
+    border-radius: 50%;
+    top: 50%;
+
+    transform: translate(50%, -50%);
+    right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+}
+
+/* title descr */
+.under-line li .title,
+.under-line li .descr {
+    background: var(--bgColor);
+    position: relative;
+    padding-inline: 1.5rem;
+}
+
+.under-line li .title {
+    overflow: hidden;
+    padding-block-start: 1.5rem;
+    padding-block-end: 1rem;
+    font-weight: 500;
+    width: 90%;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #09043c;
+}
+
+.under-line li .descr {
+    padding-block-end: 1.5rem;
+    font-weight: 300;
+    width: 90%;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    -webkit-box-orient: vertical;
+}
+
+/* shadows */
+.under-line li .title::before,
+.under-line li .descr::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 0.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    left: 50%;
+    border-radius: 50%;
+    filter: blur(4px);
+    transform: translate(-50%, 50%);
+}
+
+.under-line li .title::before {
+    bottom: calc(100% + 0.125rem);
+}
+
+.under-line li .descr::before {
+    z-index: -1;
+    bottom: 0.25rem;
+}
+
+@media (min-width: 40rem) {
+    .under-line {
+        grid-template-columns: 1fr var(--line-w) 1fr;
+    }
+
+    .under-line::before {
+        grid-column: 2;
+    }
+
+    .under-line li:nth-child(odd) {
+        grid-column: 1;
+    }
+
+    .under-line li:nth-child(even) {
+        grid-column: 3;
+    }
+
+    /* start second card */
+    .under-line li:nth-child(2) {
+        grid-row: 2/4;
+    }
+
+    .under-line li:nth-child(odd) .date::before {
+        clip-path: polygon(0 0, 100% 0, 100% 100%);
+        left: 0;
+    }
+
+    .under-line li:nth-child(odd) .date::after {
+        transform: translate(-50%, -50%);
+        left: calc(100% + var(--col-gap) + var(--line-w) / 2);
+    }
+
+    .under-line li:nth-child(odd) .date {
+        border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+    }
+}
+
+/* ----------------------------------------------Patient-Recovery-Stories------------------------------ */
+
+.patient-section {
+    padding-top: 3%;
+}
+
+.patient-heading {
+    font-size: 45px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-top: 5%;
+    text-align: center;
+    color: #ec2763;
+    position: relative;
+}
+
+
+.patient-para {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-top: 5%;
+    text-align: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    color: #09043c;
+    position: relative;
+}
+
+
+
+/* -----------------testimonial section------------------- */
+.testimonial-card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+.testimonial-card p {
+    padding-top: 40px;
+}
+
+.testimonial-card h5 {
+    color: #ec2763;
+}
+
+.testimonial-card span {
+    font-size: 14px;
+    color: #09043c;
+}
+
+.testi-para {
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    padding-top: 50px;
+    line-height: 24px;
+    color: #09043c;
+}
+
+.testi-para::before {
+    content: "\201C";
+    font-size: 40px;
+    color: #ec2763;
+}
+
+.testi-para::after {
+    content: "\201d";
+    font-size: 40px;
+    color: #ec2763;
+}
+
+/* -------------------about-us------------------- */
+
+/* --------------------banner------------ */
+.banner {
+    text-align: center;
+    color: #fff;
+    background-color: #09043c;
+}
+
+.banner h1 {
+    margin-top: 10%;
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.banner p {
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.009em;
+    padding: 0px 150px;
+    margin-bottom: 10%;
+}
+
+/* -----------------------------------------------------------------our-leadership-section------------------------------------------------- */
+.our-leadership-section {
+    height: 110vh;
+    z-index: 0;
+    position: relative;
+    background-color: #f7f7fc;
+    /* Change the background color as needed */
+    color: #222;
+}
+
+.our-leadership-section h1 {
+    text-align: center;
+    margin-top: 7% !important;
+    font-size: 45px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-top: 5%;
+    color: #09043c;
+    position: relative;
+}
+
+.our-leadership-section h1::after {
+    content: "";
+    display: block;
+    width: 15%;
+    height: 5px;
+    /* Adjust the thickness of the underline */
+    background-color: var(--text-pink);
+    position: absolute;
+    bottom: 0;
+    left: 43%;
+    top: 145%;
+    transform: translateX(-0%);
+}
+
+
+#side::-webkit-scrollbar {
+    width: 0;
+    max-width: 200px;
+}
+
+.our-leadership-section .leadership-section {
+    margin-top: 5%;
+}
+
+.our-leadership-section .leadership-section img {
+    width: 80%;
+    height: 100%;
+}
+
+.our-leadership-section .leadership-section-desc {
+    margin-top: 5%;
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+.our-leadership-section .leadership-section-desc .heading {
+    margin-top: 5%;
+    font-size: 32px;
+    max-width: 1250px;
+    line-height: 32px;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-weight: 800;
+    color: #09043c;
+    /* padding-left: 8%; */
+    padding-right: 8%;
+}
+
+.our-leadership-section .leadership-section-desc .desc {
+    margin-top: 0%;
+    font-size: 16px;
+    max-width: 1250px;
+    line-height: 32px;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-weight: 600;
+    color: #09043c;
+    /* padding-left: 8%; */
+    padding-right: 8%;
+}
+
+.our-leadership-section .leadership-section-desc p {
+    margin-top: 0%;
+    font-size: 16px;
+    max-width: 1250px;
+    line-height: 32px;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-weight: 600;
+    color: #09043c;
+    /* padding-left: 8%; */
+    padding-right: 8%;
+    margin-top: 3%;
+}
+
+.our-leadership-section .leadership-section-desc b {
+    margin-top: 0%;
+    font-size: 18px;
+    max-width: 1250px;
+    line-height: 32px;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-weight: 800;
+    color: #09043c;
+    /* padding-left: 8%; */
+    padding-right: 8%;
+    margin-top: 3%;
+}
+
+/* ---------------------------------------Comprehensive-section------------------------------------------------- */
+.comprehensive-section {
+    margin-top: 5%;
+}
+
+.comprehensive-section h1 {
+    font-size: 45px;
+    max-width: 1250px;
+    line-height: 30px;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-weight: 800;
+    color: #ec2763;
+}
+
+.comprehensive-section p {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    margin-top: 2%;
+    width: 65%;
+    color: #09043c;
+}
+
+.comprehensive-card {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #09043c;
+    padding-left: 6%;
+    padding-top: 6%;
+    padding-bottom: 5%;
+}
+
+.comprehensive-card-section img {
+    width: 20%;
+    padding: 5%;
+    padding-left: 0%;
+}
+
+.comprehensive-card-section h1 {
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    color: #fff;
+}
+
+.comprehensive-card-section p {
+    font-size: 14px;
+    color: #999999;
+    font-style: normal;
+    letter-spacing: normal;
+    font-stretch: normal;
+    line-height: 1.64;
+    font-weight: 500;
+    width: 320px;
+    margin-top: 12px;
+    margin-bottom: 10% !important;
+}
+
+/* ......... contact form start........ */
+.contact-button {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ec2763;
+    margin-top: 20px;
+}
+
+.contact-heading {
+    font-size: 40px;
+    font-weight: 600;
+    width: 55%;
+    line-height: 1.25em;
+    margin-bottom: 20px;
+    color: #ec2763;
+}
+
+.contact-pera {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 50px;
+    color: #09043c;
+}
+
+.svg-color {
+    fill: #ec2763;
+    width: 40px;
+    height: 40px;
+    margin-right: 24px;
+
+}
+
+.contact-moblile-no {
+    font-size: 20px;
+    color: var(--font-color);
+    text-decoration: none;
+    margin-bottom: 50px;
+    color: #09043c;
+}
+
+.label-name {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    padding: 10px 0px;
+    color: #09043c;
+}
+
+.location-btn {
+    padding: 8px 25px;
+    font-size: 16px;
+    border: none;
+    background: #ccb79f;
+    outline: 1px solid #ccb79f;
+    margin-right: 10px;
+    transition: ease 1s;
+    background-color: #fff;
+}
+
+.location-btn:hover {
+    transform: scale(1.05);
+}
+
+.location-btn.selected {
+    background: #ec2763;
+    color: #09043c;
+    border: none !important;
+}
+
+
+.input-feild[type=text] {
+    color: #09043c;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.contact-left {
+    margin-left: 10%;
+}
+
+.form-design {
+    border-radius: 15px;
+    background-color: #edeadf;
+
+}
+
+/* ----------------------------------------------------Get-touch-section------------------------------------------ */
+.get-touch-section {
+    height: auto;
+    margin: 2%;
+    border: 4px solid #f8f8f8;
+    border-radius: 20px;
+    padding: 5%;
+    padding-top: 4%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.get-touch-section p {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 4px;
+    font-weight: 900;
+    color: #ec2763;
+}
+
+.get-touch-section h1 {
+    font-size: 34px;
+    line-height: 40px;
+    color: #09043c;
+}
+
+.get-touch-section button {
+    margin-top: 2%;
+    width: 150px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.03rem;
+    line-height: 18px;
+    background-color: #fff;
+    color: #ec2763;
+    border-radius: 25px !important;
+    border: 2px solid #ec2763;
+}
+
+
+
+/* -------------------whychoose-us------------- */
+.whychoose-heading {
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--headingcolr);
+    text-align: center;
+    margin-bottom: 70px;
+    /* padding-top: 50px; */
+}
+
+.whychoose-heading span {
+    color: #ec2763;
+}
+
+.highlight {
+    color: #ec2763;
+}
+
+.whychoose-card {
+    height: 210px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.card_image {
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.whychoose-card h4 {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--headingcolr);
+}
+
+.question-mark {
+    width: 90px;
+}
+
+.whychoose-card p {
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* -webkit-line-clamp: 4; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    height: 85px;
+    color: var(--paragraph);
+    /* margin-bottom: 25px; */
+}
+
+/* ----------------------------------------------Service-section------------------------------ */
+
+.Service-section {
+    padding-top: 3%;
+    height: 80vh;
+    /* margin-bottom: 5%; */
+    background-color: antiquewhite;
+}
+
+.Service-img {
+    width: 100%;
+    height: 65vh;
+}
+
+.Service-heading {
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 700;
+    margin-top: 20%;
+    color: #ec2763;
+    position: relative;
+    text-align: end;
+}
+
+.Service-para {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    margin-top: 5%;
+    color: #09043c;
+    position: relative;
+    text-align: end;
+}
+
+/* ----------------------------mindful-patients---------------------- */
+
+.title_1 {
+    color: #ec2763;
+    font-size: 48px;
+    line-height: 54px;
+    padding-bottom: 1%;
+    position: relative;
+}
+
+.title_1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18%;
+    height: 5px;
+    /* Adjust the thickness of the underline */
+    background-color: #09043c;
+    position: absolute;
+    bottom: 0;
+    left: 41%;
+    top: 75%;
+    transform: translateX(-0%);
+}
+
+.tip-section {
+    margin-top: 5%;
+}
+
+.service-card {
+    width: 360px;
+    border-radius: 30px;
+    margin-bottom: 8%;
+}
+
+.card .card-img-top img {
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.post-date {
+    font-size: 14px;
+}
+
+.patient_card_heading {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    height: 34px;
+    color: #ec2763;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 2%;
+}
+
+.patient_card_content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    height: 67px;
+    font-size: 15px;
+}
+
+
+.read_button {
+    border-radius: 30px;
+    background-color: #09043c;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.read_button:hover {
+    border: 2px solid #09043c;
+    color: #ec2763;
+}
+
+.read_button1 {
+    border-radius: 30px;
+    background-color: #09043c;
+    color: white;
+}
+
+.read_button1:hover {
+    border: 2px solid #09043c;
+    color: #ec2763;
+}
+
+.post-date_1 {
+    font-size: 15px !important;
+    margin: -1px 0px 0px 0px;
+    padding-right: 8%;
+}
+
+/* --------------------------------blog-banner-section------------------------------ */
+.blog-banner {
+    background-image: url('./images/banner-img-4.avif');
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15%;
+    margin-top: 5%;
+}
+
+.blog-banner h1 {
+    font-size: 55px;
+    color: #ec2763;
+}
+
+.blog-banner p {
+    font-size: 24px;
+    color: #09043c;
+    line-height: 38px;
+}
+
+/* ---------------------------tabs-sections-------------------- */
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+
+.tab-container {
+    overflow: hidden;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.tablinks {
+    background-color: #f1f1f1;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    margin: 10px;
+    border-radius: 24px;
+}
+
+/* Change background color of buttons on hover */
+.tablinks:hover {
+    background-color: #ec2763;
+}
+
+/* Set a default active tab */
+.tablinks.active {
+    background-color: #ec2763;
+    color: #fff;
+}
+
+.tabcontent-card-img {
+    height: 75%;
+    margin-top: 12%;
+}
+
+.tabcontent-img {
+    height: 100%;
+
+}
+
+.tabcontent-card {
+    margin: 5%;
+}
+
+.tabcontent-card h1 {
+    font-size: 18px;
+}
+
+.tabcontent-card p {
+    font-size: 12px;
+}
+
+.tabcontent-card button {
+    font-size: 14px;
+    width: 160px;
+    height: 45px;
+    border-radius: 24px;
+    border: none;
+    background-color: #ec2763;
+    color: #fff;
+
+}
+
+.tabcontent-card button:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.tabcontent-card-hr {
+    margin-top: 4%;
+}
+
+/* ---------------------------------------------------service-update-section------------------------------- */
+
+.service-update-section {
+    margin-top: 8%;
+    height: auto;
+}
+
+.card-heading {
+    font-size: 45px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-top: 2%;
+    text-align: center;
+    color: #09043c;
+    position: relative;
+    margin-bottom: 8%;
+}
+
+.card-heading::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 5px;
+    background-color: var(--text-pink);
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    top: 150%;
+    transform: translateX(-0%);
+}
+
+.card-section1.card-1 {
+    background-image: url("./images/service-1.png");
+    background-size: 100% 100%;
+}
+
+.card-section1.card-2 {
+    background-image: url("./images/service-2.png");
+    background-size: 100% 100%;
+}
+
+.card-section1.card-3 {
+    background-image: url("./images/service-3.png");
+    background-size: 100% 100%;
+}
+
+.card-section1 {
+    width: 400px;
+    height: 450px;
+    position: relative;
+    background-size: cover;
+    border-radius: 8px;
+    margin-bottom: 12%;
+    transition: ease 1s;
+}
+
+.card-section1:hover {
+    transform: scale(0.97);
+}
+
+.card-section2 {
+    position: absolute;
+    height: 202px;
+    width: 300px;
+    top: 55%;
+    background-color: rgba(30, 28, 28, 0.7);
+    padding: 5%;
+    border-radius: 8px;
+
+}
+
+
+.card-section2 h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.card-section2 p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    height: auto;
+    font-size: 16px;
+    color: #999999;
+}
+
+.new-button {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica, "sans-serif";
+    transition: all .2s;
+    padding: 3px 6px;
+    border-radius: 50px;
+    background: #ec2763;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-top: -2%;
+}
+
+.new-button:hover {
+    background: #ec2763;
+}
+
+.new-button>svg {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    transition: transform .3s ease-in-out;
+}
+
+.new-button:hover svg {
+    transform: translateX(3px);
+}
+
+.new-button:active {
+    transform: scale(0.95);
+}
+
+/* --------------------footer------------------------------------------------ ----------------- */
+
+
+.hero {
+    height: auto;
+    background-color: #09043c;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.container__about {
+    margin-bottom: 30px;
+}
+
+.container__about p {
+    margin-top: 10px;
+    max-width: 350px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-logo {
+    width: 190px;
+    /* margin-left: -49%; */
+}
+
+.footer-tag-line {
+    color: #ec2763 !important;
+    font-weight: 600;
+    margin-bottom: 10%;
+}
+
+.footer-heading {
+    color: #ec2763;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+}
+
+.footer-links:hover {
+    color: #ccb79f;
+    text-decoration: none;
+}
+
+footer .by {
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .by p {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.list-unstyled {
+    text-align: left;
+}
+
+.line__separete {
+    margin-top: 20px;
+    width: 100%;
+    height: 1px;
+    background-color: #ec2763;
+    z-index: 999;
+}
+
+.icons {
+    display: flex;
+    column-gap: 25px;
+    /* margin-left: 8%; */
+}
+
+.icon1 {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #ccb79f;
+    transition-duration: .25s;
+}
+
+.icon1:hover {
+    outline-offset: 2px;
+}
+
+.icon1:hover i {
+    animation: shake .25s;
+}
+
+.icon--instagram:hover {
+    background-color: #ccb79f;
+    color: #000000;
+}
+
+.icon--twitter:hover {
+    background-color: #ccb79f;
+    color: #000000;
+}
+
+.icon--linkedin:hover {
+    background-color: #ccb79f;
+    color: #000000;
+}
+
+.icon--github:hover {
+    background-color: #ccb79f;
+    color: #000000;
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    .post-date_1 {
+        font-size: 15px !important;
+        margin: -1px 0px 0px 0px;
+        padding-right: 10%;
+    }
+
+
+    .post-date_2 {
+        font-size: 12px !important;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+    .carousel-inner img {
+        width: 100%;
+        height: 200px;
+        margin: 0;
+    }
+
+    #welcome::after {
+        content: '';
+        background: #172982;
+        height: 10px;
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        display: block;
+        background: #4eb064;
+        transform: translateY(-14px);
+    }
+
+    .banner-content {
+        margin-top: -10% !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer-links {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer-heading {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container__about h2 {
+        font-size: 20px;
+    }
+
+    .container__about p {
+        font-size: 12px;
+    }
+
+    footer .by {
+        margin-top: 20px;
+    }
+
+    .line__separete {
+        margin-top: 10px;
+        height: 1px;
+
+    }
+
+    .icon1 {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    footer .by p {
+        font-size: 12px;
+    }
+
+    .bz-form {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1030px) {
+
+    /* -------------------whychoose-us------------- */
+    .whychoose-heading {
+        font-size: 37px;
+        font-weight: 600;
+
+        margin-bottom: 29px;
+        /* padding-top: 50px; */
+    }
+
+    .whychoose-card {
+        height: 237px;
+    }
+
+    /* -----------------testimonial section------------------- */
+    .testi-heading {
+        font-size: 37px;
+        font-weight: 600;
+        margin-bottom: 70px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* -------------------whychoose-us------------- */
+    .whychoose-heading {
+        font-size: 28px;
+        font-weight: 500;
+        color: #383637;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .whychoose-card {
+        height: 200px;
+    }
+
+    .question-mark {
+        width: 60px;
+    }
+}
+
+
+
+@media only screen and (max-width: 376px) {
+
+    
+    /* --------------------------------------who-we-are-section----------------------------------- */
+
+    .who-we-are-section {
+        height: auto;
+        margin-bottom: 10%;
+    }
+
+    .who-we-are-section h1 {
+        margin-top: 8% !important;
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .who-we-are-section h1::after {
+        width: 40%;
+        left: 29%;
+        top: 110%;
+    }
+
+    .who-we-are-section .we-are-section-1 {
+        height: auto;
+    }
+
+    .who-we-are-section .we-are-section-1 p {
+        margin-top: 8%;
+        font-size: 14px;
+        padding-right: 5%;
+        line-height: 28px;
+        padding-left: 5%;
+    }
+
+    .who-we-are-section .we-are-section-2 {
+        height: auto;
+    }
+
+    .who-we-are-section .we-are-section-2 img {
+        margin-top: 3%;
+        height: 350px;
+        border-radius: 0px;
+        width: 90%;
+    }
+
+
+    /* ---------------------------------------our-culture-section-------------------------------------------- */
+    .our-culture-section {
+        height: 130vh;
+    }
+
+    .our-culture-section h1 {
+        font-size: 24px;
+        line-height: 28px;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 6%;
+    }
+
+    .our-culture-section p {
+        font-size: 14px;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 2%;
+    }
+
+    .culture-card {
+        height: 75vh;
+        width: 90% !important;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        padding-top: 3%;
+        padding-left: 3% !important;
+        padding-bottom: 3% !important;
+        top: 64% !important;
+        background-color: #f7f7fc;
+    }
+
+    .culture-card img {
+        padding-left: 5%;
+    }
+
+    .culture-card .main-heading {
+        font-size: 14px;
+    }
+
+    .culture-card .description {
+        font-size: 12px;
+        width: auto;
+        margin-bottom: 5% !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 4;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        height: auto;
+
+    }
+
+    /* ----------------------------------------------------process-section------------------------- */
+    .process-section {
+        margin-top: 15%;
+    }
+
+    .process-heading {
+        margin-top: 8% !important;
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .process-heading::after {
+        width: 40%;
+        left: 30%;
+        top: 110%;
+    }
+
+    .process-card-section {
+        margin-top: 0%;
+    }
+
+    .process-card-clr {
+        background-color: #f7f7fc;
+        height: auto;
+        width: 100%;
+        padding-top: 15px;
+    }
+
+
+    .process-card {
+        height: auto !important;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        transition: ease 1s;
+    }
+
+    .process-card:hover {
+        transform: scale(1.05);
+    }
+
+    .process-img {
+        width: 20%;
+        margin: 0 auto;
+        padding: 1%;
+    }
+
+
+    .process-desc {
+        margin: 10px auto 5px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .process-descrpt {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /* -----------------------------------------------Process-we-follow----------------------- */
+    .heading {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .under-line {
+        --col-gap: 1rem;
+        --row-gap: 1rem;
+    }
+
+    .under-line li .date {
+        --dateH: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .under-line li .date::before {
+        width: 1rem;
+    }
+
+    .under-line li .date::after {
+        width: 1rem;
+        border-width: 0.2rem;
+    }
+
+    .under-line li .title {
+        padding-block-start: 1rem;
+        padding-block-end: 0.5rem;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .under-line li .descr {
+        padding-block-end: 1rem;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .under-line li .title::before {
+        bottom: calc(100% + 0.1rem);
+    }
+
+    .under-line li .descr::before {
+        bottom: 0.1rem;
+    }
+
+    /* ----------------------------------------------Patient-Recovery-Stories------------------------------ */
+
+    .patient-heading {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+
+    .patient-para {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    /* -----------------testimonial section------------------- */
+    .testimonial-card {
+        padding: 10px;
+    }
+
+    .testimonial-card p {
+        padding-top: 20px;
+    }
+
+    .testi-para {
+        padding-top: 30px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .testi-para::before,
+    .testi-para::after {
+        font-size: 20px;
+    }
+
+    /* -------------------about-us------------------- */
+
+    /* --------------------banner------------ */
+    .banner {
+        padding: 10px;
+    }
+
+    .banner h1 {
+        font-size: 19px;
+        margin-top: 5%;
+    }
+
+    .banner p {
+        padding: 0 10px;
+        margin-bottom: 5%;
+        font-size: 14px;
+    }
+
+    /* ---------------------------------------our-leadership-section-------------------------------------------- */
+    .our-leadership-section {
+        height: 120vh;
+        z-index: 0;
+        position: relative;
+        /* Change the background color as needed */
+        background-color: #f7f7fc;
+        /* Change the background color as needed */
+        color: #222;
+    }
+
+    .our-leadership-section h1 {
+        font-size: 28px;
+        line-height: 34px;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 6%;
+    }
+
+    .our-leadership-section h1::after {
+        width: 50%;
+        left: 25%;
+        top: 110%;
+    }
+
+    .our-leadership-section .leadership-section-desc .heading {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .our-leadership-section .leadership-section-desc .desc {
+        font-size: 14px;
+        padding-right: 0%;
+        line-height: 28px;
+    }
+
+    .our-leadership-section .leadership-section-desc p {
+        font-size: 14px;
+        padding-right: 0%;
+        line-height: 28px;
+    }
+
+    .our-leadership-section .leadership-section-desc b {
+        font-size: 14px;
+        padding-right: 0%;
+        line-height: 28px;
+    }
+
+    /* ---------------------------------------Comprehensive-section------------------------------------------------- */
+    .comprehensive-section {
+        margin-top: 20%;
+    }
+
+    .comprehensive-section h1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .comprehensive-section p {
+        width: 100%;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .comprehensive-card-section h1 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .comprehensive-card-section p {
+        font-size: 12px;
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    }
+
+    /* ----------------------------------------------------Get-touch-section------------------------------------------ */
+    .get-touch-section {
+        height: auto;
+        margin: 9%;
+        border: 4px solid #f8f8f8;
+        border-radius: 20px;
+        padding: 5%;
+        padding-top: 4%;
+    }
+
+    .get-touch-section p {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        font-weight: 900;
+        color: #ec2763;
+        text-align: center;
+    }
+
+    .get-touch-section h1 {
+        font-size: 14px;
+        line-height: 34px;
+        text-align: center;
+        color: #09043c;
+    }
+
+    .get-touch-section button {
+        margin-top: 2%;
+        width: 150px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.03rem;
+        line-height: 18px;
+        background-color: #fff;
+        color: #ec2763;
+        border-radius: 25px !important;
+        border: 2px solid #ec2763;
+    }
+
+    /* ---------------------------------------contact form Start-------------------------------- */
+    .contact-button {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .contact-heading {
+        font-size: 28px;
+        width: 80%;
+        line-height: 1.2em;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .contact-pera {
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+    .svg-color {
+        width: 30px;
+        height: 30px;
+        margin-right: 16px;
+    }
+
+    .contact-moblile-no {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .label-name {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 8px 0px;
+    }
+
+    .location-btn {
+        font-size: 14px;
+        padding: 6px 20px;
+        margin-right: 8px;
+    }
+
+    .input-feild[type=text] {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+
+    .form-design {
+        border-radius: 10px;
+    }
+
+    .contact-left {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+    }
+
+    /* ----------------------------mindful-patients---------------------- */
+
+    .title_1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .title_1::after {
+        width: 50%;
+        left: 25%;
+        top: 110%;
+    }
+
+    .tip-section {
+        margin-top: 5%;
+    }
+
+    .service-card {
+        width: 100%;
+        border-radius: 30px;
+        margin-bottom: 8%;
+        
+    }
+
+    .card .card-img-top img {
+        height: 200px;
+        width: 100%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .post-date {
+        font-size: 14px;
+    }
+
+    .patient_card_heading {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        height: 34px;
+        color: #ec2763;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 2%;
+    }
+
+    .patient_card_content {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        height: 67px;
+        font-size: 15px;
+    }
+
+
+    .read_button {
+        border-radius: 30px;
+        background-color: #09043c;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .read_button:hover {
+        border: 2px solid #09043c;
+        color: #ec2763;
+    }
+
+    .read_button1 {
+        border-radius: 30px;
+        background-color: #09043c;
+        color: white;
+    }
+
+    .read_button1:hover {
+        border: 2px solid #09043c;
+        color: #ec2763;
+    }
+
+    .post-date_1 {
+        font-size: 15px !important;
+        margin: -1px 0px 0px 0px;
+        padding-right: 8%;
+    }
+
+    /* --------------------------------blog-banner-section------------------------------ */
+    .blog-banner {
+        margin-top: 0;
+        padding-left: 5%;
+    }
+
+    .blog-banner h1 {
+        font-size: 40px;
+    }
+
+    .blog-banner p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    /* ---------------------------tabs-sections-------------------- */
+    .tab-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* Add a 10px gap between the tabs */
+    }
+
+    .tablinks {
+        width: calc(50% - 10px);
+        /* Subtract the gap from the width to maintain the original width */
+        margin: 10px 0;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .tabcontent {
+        padding: 0;
+    }
+
+    .tabcontent-card {
+        margin: 5% 0;
+    }
+
+    .tabcontent-card h1 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .tabcontent-card p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .tabcontent-card-img {
+        height: 90%;
+        margin-top: 8%;
+    }
+
+    .tabcontent-card button {
+        width: 50%;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    /* ---------------------------------------------------service-update-section------------------------------- */
+    .service-update-section {
+        margin-top: 4%;
+    }
+
+    .card-heading {
+        font-size: 30px;
+        line-height: 20px;
+        margin-top: 1%;
+        margin-bottom: 15%;
+    }
+
+    .card-heading::after {
+        width: 56%;
+        top: 145%;
+        left: 23%;
+    }
+
+    .card-section1 {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 8%;
+    }
+
+    .card-section1:hover {
+        transform: scale(0.95);
+    }
+
+    .card-section2 {
+        height: 175px;
+        width: 250px;
+        top: 50%;
+        padding: 3%;
+    }
+
+    .card-section2 h1 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .card-section2 p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .new-button {
+        font-size: 10px;
+        padding: 2px 4px;
+        margin-top: -1%;
+    }
+
+    .new-button>svg {
+        width: 16px;
+        height: 16px;
+    }
+
+}
+
+@media only screen and (min-width:376px) and (max-width: 576px) {
+    /* --------------------------------------who-we-are-section----------------------------------- */
+
+    .who-we-are-section {
+        height: auto;
+        margin-bottom: 10%;
+    }
+
+    .who-we-are-section h1 {
+        margin-top: 8% !important;
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .who-we-are-section h1::after {
+        width: 30%;
+        left: 35%;
+        top: 110%;
+    }
+
+    .who-we-are-section .we-are-section-1 {
+        height: auto;
+    }
+
+    .who-we-are-section .we-are-section-1 p {
+        margin-top: 8%;
+        font-size: 15px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .who-we-are-section .we-are-section-2 {
+        height: auto;
+    }
+
+    .who-we-are-section .we-are-section-2 img {
+        margin-top: 3%;
+        height: 400px;
+        border-radius: 0px;
+        width: 90%;
+    }
+
+    /* ----------------------------------------------------process-section------------------------- */
+    .process-section {
+        margin-top: 15%;
+    }
+
+    .process-heading {
+        margin-top: 8% !important;
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .process-heading::after {
+        width: 40%;
+        left: 30%;
+        top: 110%;
+    }
+
+    .process-card-section {
+        margin-top: 0%;
+    }
+
+    .process-card-clr {
+        background-color: #f7f7fc;
+        height: auto;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+
+    .process-card {
+        height: auto !important;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        transition: ease 1s;
+    }
+
+    .process-card:hover {
+        transform: scale(1.05);
+    }
+
+    .process-img {
+        width: 20%;
+        margin: 0 auto;
+        padding: 1.5%;
+    }
+
+
+    .process-desc {
+        margin: 16px auto 8px;
+        width: 100%;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .process-descrpt {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    /* ---------------------------------------our-culture-section-------------------------------------------- */
+
+    .our-culture-section {
+        height: 100vh;
+        background-color: #09043c;
+        z-index: 100;
+        position: relative;
+        color: white;
+    }
+
+    .our-culture-section h1 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 5%;
+    }
+
+    .our-culture-section p {
+        font-size: 14px;
+        margin-top: 2%;
+    }
+
+    .culture-card {
+        width: 90% !important;
+        height: auto;
+        top: 65%;
+        transform: translate(-50%, -50%);
+        background-color: #f7f7fc;
+    }
+
+    .culture-card img {
+        padding-left: 5%;
+        /* Adjust padding for smaller screens */
+    }
+
+    .culture-card .main-heading {
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .culture-card .description {
+        font-size: 12px;
+        width: 100%;
+        margin-bottom: 5% !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    }
+
+    /* ------------------------------------------------------Process-we-follw----------------------------------------- */
+    .heading {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .under-line {
+        --col-gap: 1.5rem;
+        --row-gap: 1.5rem;
+    }
+
+    .under-line li .date {
+        --dateH: 2.75rem;
+        font-size: 1.1rem;
+    }
+
+    .under-line li .date::before {
+        width: 1.5rem;
+    }
+
+    .under-line li .date::after {
+        width: 1.5rem;
+        border-width: 0.25rem;
+    }
+
+    .under-line li .title {
+        padding-block-start: 1.5rem;
+        padding-block-end: 1rem;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .under-line li .descr {
+        padding-block-end: 1.5rem;
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .under-line li .title::before {
+        bottom: calc(100% + 0.15rem);
+    }
+
+    .under-line li .descr::before {
+        bottom: 0.15rem;
+    }
+
+    /* ----------------------------------------------Patient-Recovery-Stories------------------------------ */
+
+    .patient-heading {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+
+    .patient-para {
+        font-size: 14px;
+        line-height: 32px;
+    }
+
+    /* -----------------testimonial section------------------- */
+    .testimonial-card {
+        padding: 10px;
+    }
+
+    .testimonial-card p {
+        padding-top: 20px;
+    }
+
+    .testi-para {
+        padding-top: 30px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .testi-para::before,
+    .testi-para::after {
+        font-size: 20px;
+    }
+
+    /* -------------------about-us------------------- */
+
+    /* --------------------banner------------ */
+    .banner h1 {
+        font-size: 22px;
+        margin-top: 8%;
+    }
+
+    .banner p {
+        padding: 0 30px;
+        margin-bottom: 8%;
+        font-size: 16px;
+    }
+
+    /* ---------------------------------------our-leadership-section-------------------------------------------- */
+
+    .our-leadership-section {
+        height: auto;
+        z-index: 100;
+        position: relative;
+        background-color: #f7f7fc;
+        /* Change the background color as needed */
+        color: #222;
+    }
+
+    .our-leadership-section h1 {
+        font-size: 24px;
+        /* Adjust font size for smaller screens */
+        line-height: 32px;
+        /* Adjust line height for smaller screens */
+        margin-top: 5%;
+        /* Adjust margin for smaller screens */
+    }
+
+    .our-leadership-section h1::after {
+        width: 40%;
+        left: 30%;
+        top: 110%;
+    }
+
+    .our-leadership-section .leadership-section-desc .heading {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .our-leadership-section .leadership-section-desc .desc {
+        font-size: 15px;
+        padding-right: 0%;
+        line-height: 28px;
+    }
+
+    .our-leadership-section .leadership-section-desc p {
+        font-size: 15px;
+        padding-right: 0%;
+        line-height: 28px;
+    }
+
+    .our-leadership-section .leadership-section-desc b {
+        font-size: 15px;
+        padding-right: 0%;
+        line-height: 28px;
+    }
+
+    /* ---------------------------------------Comprehensive-section------------------------------------------------- */
+    .comprehensive-section {
+        margin-top: 10%;
+    }
+
+    .comprehensive-section h1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .comprehensive-section p {
+        width: 100%;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .comprehensive-card-section h1 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .comprehensive-card-section p {
+        font-size: 12px;
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    }
+
+    /* ----------------------------------------------------Get-touch-section------------------------------------------ */
+    .get-touch-section {
+        height: auto;
+        margin: 9%;
+        border: 4px solid #f8f8f8;
+        border-radius: 20px;
+        padding: 5%;
+        padding-top: 4%;
+    }
+
+    .get-touch-section p {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        font-weight: 900;
+        color: #ec2763;
+        text-align: center;
+    }
+
+    .get-touch-section h1 {
+        font-size: 14px;
+        line-height: 34px;
+        text-align: center;
+        color: #09043c;
+    }
+
+    .get-touch-section button {
+        margin-top: 2%;
+        width: 150px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.03rem;
+        line-height: 18px;
+        background-color: #fff;
+        color: #ec2763;
+        border-radius: 25px !important;
+        border: 2px solid #ec2763;
+    }
+
+    /* ---------------------------------------contact form Start-------------------------------- */
+    .contact-button {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .contact-heading {
+        font-size: 28px;
+        width: 80%;
+        line-height: 1.2em;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .contact-pera {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    .svg-color {
+        width: 30px;
+        height: 30px;
+        margin-right: 16px;
+    }
+
+    .contact-moblile-no {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .label-name {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 8px 0px;
+    }
+
+    .location-btn {
+        font-size: 14px;
+        padding: 6px 20px;
+        margin-right: 8px;
+    }
+
+    .input-feild[type=text] {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+
+    .form-design {
+        border-radius: 10px;
+    }
+
+    .contact-left {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+    }
+
+    /* ----------------------------mindful-patients---------------------- */
+
+    .title_1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .title_1::after {
+        width: 50%;
+        left: 25%;
+        top: 110%;
+    }
+
+    .tip-section {
+        margin-top: 5%;
+    }
+
+    .service-card {
+        width: 100%;
+        border-radius: 30px;
+        margin-bottom: 8%;
+    }
+
+    .card .card-img-top img {
+        height: 200px;
+        width: 100%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .post-date {
+        font-size: 14px;
+    }
+
+    .patient_card_heading {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        height: 34px;
+        color: #ec2763;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 2%;
+    }
+
+    .patient_card_content {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        height: 67px;
+        font-size: 15px;
+    }
+
+
+    .read_button {
+        border-radius: 30px;
+        background-color: #09043c;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .read_button:hover {
+        border: 2px solid #09043c;
+        color: #ec2763;
+    }
+
+    .read_button1 {
+        border-radius: 30px;
+        background-color: #09043c;
+        color: white;
+    }
+
+    .read_button1:hover {
+        border: 2px solid #09043c;
+        color: #ec2763;
+    }
+
+    .post-date_1 {
+        font-size: 15px !important;
+        margin: -1px 0px 0px 0px;
+        padding-right: 8%;
+    }
+
+    /* --------------------------------blog-banner-section------------------------------ */
+    .blog-banner {
+        margin-top: 0;
+        padding-left: 10%;
+    }
+
+    .blog-banner h1 {
+        font-size: 45px;
+    }
+
+    .blog-banner p {
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    /* ---------------------------tabs-sections-------------------- */
+    .tab-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* Add a 10px gap between the tabs */
+    }
+
+    .tablinks {
+        width: calc(50% - 10px);
+        /* Subtract the gap from the width to maintain the original width */
+        margin: 10px 0;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .tabcontent {
+        padding: 0;
+    }
+
+    .tabcontent-card {
+        margin: 5% 0;
+    }
+
+    .tabcontent-card h1 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .tabcontent-card p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .tabcontent-card-img {
+        height: 90%;
+        margin-top: 8%;
+    }
+
+    .tabcontent-card button {
+        width: 50%;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    /* ---------------------------------------------------service-update-section------------------------------- */
+    .service-update-section {
+        margin-top: 6%;
+    }
+
+    .card-heading {
+        font-size: 32px;
+        line-height: 24px;
+        margin-top: 2%;
+        margin-bottom: 12%;
+    }
+
+    .card-heading::after {
+        width: 50%;
+        top: 140%;
+        left: 25%;
+    }
+
+    .card-section1 {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 10%;
+    }
+
+    .card-section1:hover {
+        transform: scale(0.96);
+    }
+
+    .card-section2 {
+        height: 208px;
+        width: 245px;
+        top: 48%;
+        padding: 3%;
+    }
+
+    .card-section2 h1 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .card-section2 p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .new-button {
+        font-size: 12px;
+        padding: 2px 4px;
+        margin-top: -1%;
+    }
+
+    .new-button>svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    /* --------------------------------------who-we-are-section----------------------------------- */
+
+    .who-we-are-section {
+        height: auto;
+        margin-bottom: 0%;
+    }
+
+    .who-we-are-section h1 {
+        margin-top: 8% !important;
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .who-we-are-section h1::after {
+        width: 30%;
+        left: 35%;
+        top: 110%;
+    }
+
+    .who-we-are-section .we-are-section-1 {
+        margin-top: 2%;
+        height: auto;
+    }
+
+    .who-we-are-section .we-are-section-1 p {
+        margin-top: 4%;
+        font-size: 16px;
+        line-height: 26px;
+        padding-right: 0%;
+    }
+
+    .who-we-are-section .we-are-section-2 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .who-we-are-section .we-are-section-2 img {
+        margin-top: 3%;
+        height: 500px;
+        width: 100%;
+        border-radius: 24px;
+    }
+
+    /* ----------------------------------------------------process-section------------------------- */
+    .process-section {
+        margin-top: 25%;
+    }
+
+    .process-heading {
+        margin-top: 8% !important;
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .process-heading::after {
+        width: 22%;
+        left: 40%;
+        top: 110%;
+    }
+
+    .process-card-section {
+        margin-top: 0%;
+    }
+
+    .process-card-clr {
+        background-color: #f7f7fc;
+        height: 42vh;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+
+    .process-card {
+        height: auto !important;
+        margin-top: 0%;
+        margin-bottom: 3%;
+        transition: ease 1s;
+    }
+
+    .process-card:hover {
+        transform: scale(1.05);
+    }
+
+    .process-img {
+        width: 20%;
+        margin: 0 auto;
+        padding: 2%;
+    }
+
+
+    .process-desc {
+        margin: 20px auto 10px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .process-descrpt {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /* --------------------------------------our-culture-section------------------- */
+    .our-culture-section {
+        height: 100vh;
+        background-color: #09043c;
+        z-index: 100;
+        position: relative;
+        color: white;
+        margin-bottom: 5%;
+    }
+
+    .our-culture-section h1 {
+        font-size: 24px;
+        /* Adjust font size for medium screens */
+        line-height: 16px;
+        /* Adjust line height for medium screens */
+        margin-top: 9%;
+        /* Adjust margin for medium screens */
+    }
+
+    .our-culture-section p {
+        font-size: 12px;
+        /* Adjust font size for medium screens */
+        margin-top: 1%;
+        /* Adjust margin for medium screens */
+    }
+
+    .culture-card {
+        height: auto;
+        width: 85% !important;
+        height: auto;
+        top: 84%;
+        background-color: #f7f7fc;
+    }
+
+    .culture-card .main-heading {
+        font-size: 12px;
+        /* Adjust font size for medium screens */
+    }
+
+    .culture-card .description {
+        width: 80%;
+        font-size: 10px;
+        /* Adjust font size for medium screens */
+        margin-bottom: 3% !important;
+        /* Adjust margin for medium screens */
+    }
+
+    /* -------------------------------------------Process-we-follow---------------------------- */
+    .heading {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .under-line {
+        --col-gap: 1.75rem;
+        --row-gap: 1.75rem;
+    }
+
+    .under-line li .date {
+        --dateH: 2.75rem;
+        font-size: 1.1rem;
+    }
+
+    .under-line li .date::before {
+        width: 1.75rem;
+    }
+
+    .under-line li .date::after {
+        width: 1.75rem;
+        border-width: 0.25rem;
+    }
+
+    .under-line li .title {
+        padding-block-start: 1.5rem;
+        padding-block-end: 1rem;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .under-line li .descr {
+        padding-block-end: 1.5rem;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .under-line li .title::before {
+        bottom: calc(100% + 0.15rem);
+    }
+
+    .under-line li .descr::before {
+        bottom: 0.15rem;
+    }
+
+    /* ----------------------------------------------Patient-Recovery-Stories------------------------------ */
+
+
+    .patient-heading {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+
+    .patient-para {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /* -----------------testimonial section------------------- */
+    .testimonial-card {
+        padding: 10px;
+    }
+
+    .testimonial-card p {
+        padding-top: 20px;
+    }
+
+    .testi-para {
+        padding-top: 30px;
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .testi-para::before,
+    .testi-para::after {
+        font-size: 20px;
+    }
+
+    /* -------------------about-us------------------- */
+
+    /* --------------------banner------------ */
+    .banner h1 {
+        font-size: 40px;
+        margin-top: 8%;
+    }
+
+    .banner p {
+        padding: 0 50px;
+        margin-bottom: 8%;
+        font-size: 20px;
+    }
+
+    /* --------------------------------------our-leadership-section------------------- */
+    .our-leadership-section {
+        height: auto;
+        z-index: 100;
+        position: relative;
+        background-color: #f7f7fc;
+        /* Change the background color as needed */
+        color: #222;
+        margin-bottom: 15%;
+    }
+
+    .our-leadership-section h1 {
+        font-size: 24px;
+        line-height: 16px;
+        margin-top: 9%;
+    }
+
+    .our-leadership-section h1::after {
+        width: 20%;
+        left: 40%;
+        top: 148%;
+    }
+
+    .our-leadership-section .leadership-section-desc .heading {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .our-leadership-section .leadership-section-desc .desc {
+        font-size: 16px;
+        line-height: 26px;
+        padding-right: 0%;
+    }
+
+    .our-leadership-section .leadership-section-desc p {
+        font-size: 16px;
+        line-height: 26px;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .our-leadership-section .leadership-section-desc b {
+        font-size: 16px;
+        line-height: 26px;
+        padding-right: 0%;
+    }
+
+    /* ---------------------------------------Comprehensive-section------------------------------------------------- */
+    .comprehensive-section {
+        margin-top: 10%;
+    }
+
+    .comprehensive-section h1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .comprehensive-section p {
+        width: 100%;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .comprehensive-card-section h1 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .comprehensive-card-section p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /* ----------------------------------------------------Get-touch-section------------------------------------------ */
+    .get-touch-section {
+        height: auto;
+        margin: 0%;
+        margin-top: 8%;
+        border: 4px solid #f8f8f8;
+        border-radius: 20px;
+        padding: 5%;
+        padding-top: 4%;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 8%;
+    }
+
+    .get-touch-section p {
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 2px;
+        font-weight: 900;
+        color: #ec2763;
+        margin-bottom: 10% !important;
+    }
+
+    .get-touch-section h1 {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        color: #09043c;
+    }
+
+    .get-touch-section button {
+        margin-top: 5%;
+        width: 150px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.03rem;
+        line-height: 18px;
+        background-color: #fff;
+        color: #ec2763;
+        border-radius: 25px !important;
+        border: 2px solid #ec2763;
+    }
+
+    /* ---------------------------------------contact form Start-------------------------------- */
+    .contact-button {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .contact-heading {
+        font-size: 28px;
+        width: 80%;
+        line-height: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .contact-pera {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    .svg-color {
+        width: 30px;
+        height: 30px;
+        margin-right: 16px;
+    }
+
+    .contact-moblile-no {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .label-name {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 8px 0px;
+    }
+
+    .location-btn {
+        font-size: 14px;
+        padding: 6px 20px;
+        margin-right: 8px;
+    }
+
+    .input-feild[type=text] {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+
+    .form-design {
+        border-radius: 10px;
+    }
+
+    /* ----------------------------mindful-patients---------------------- */
+
+    .title_1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .title_1::after {
+        width: 23%;
+        left: 38%;
+        top: 105%;
+    }
+
+    .tip-section {
+        margin-top: 5%;
+    }
+
+    .service-card {
+        width: 85%;
+        border-radius: 30px;
+        margin-bottom: 8%;
+    }
+
+    .card .card-img-top img {
+        height: 200px;
+        width: 100%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .post-date {
+        font-size: 14px;
+    }
+
+    .patient_card_heading {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        height: 34px;
+        color: #ec2763;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 2%;
+    }
+
+    .patient_card_content {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        height: 67px;
+        font-size: 15px;
+    }
+
+
+    .read_button {
+        border-radius: 30px;
+        background-color: #09043c;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .read_button:hover {
+        border: 2px solid #09043c;
+        color: #ec2763;
+    }
+
+    .read_button1 {
+        border-radius: 30px;
+        background-color: #09043c;
+        color: white;
+    }
+
+    .read_button1:hover {
+        border: 2px solid #09043c;
+        color: #ec2763;
+    }
+
+    .post-date_1 {
+        font-size: 15px !important;
+        margin: -1px 0px 0px 0px;
+        padding-right: 8%;
+    }
+
+    /* --------------------------------blog-banner-section------------------------------ */
+    .blog-banner {
+        margin-top: 0;
+        padding-left: 10%;
+    }
+
+    .blog-banner h1 {
+        font-size: 50px;
+    }
+
+    .blog-banner p {
+        font-size: 23px;
+        line-height: 36px;
+    }
+
+    /* ---------------------------tabs-sections-------------------- */
+    .tab-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* Add a 10px gap between the tabs */
+    }
+
+    .tablinks {
+        width: calc(33.33% - 10px);
+        /* Subtract the gap from the width to maintain the original width */
+        margin: 10px 0;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .tabcontent {
+        padding: 0;
+    }
+
+    .tabcontent-card {
+        margin: 5% 0;
+    }
+
+    .tabcontent-card h1 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .tabcontent-card p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .tabcontent-card-img {
+        height: 90%;
+        margin-top: 8%;
+    }
+
+    .tabcontent-card button {
+        width: 50%;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    /* ---------------------------------------------------service-update-section------------------------------- */
+    .service-update-section {
+        margin-top: 4%;
+    }
+
+    .card-heading {
+        font-size: 28px;
+        line-height: 32px;
+        margin-top: 4%;
+        margin-bottom: 6%;
+    }
+
+    .card-heading::after {
+        width: 22%;
+        top: 130%;
+        left: 40%;
+    }
+
+    .card-section1 {
+        height: 320px;
+    }
+
+    .card-section1:hover {
+        transform: scale(0.98);
+    }
+
+    .card-section2 {
+        height: 180px;
+        width: 220px;
+        top: 44%;
+        padding: 2%;
+    }
+
+    .card-section2 h1 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .card-section2 p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .new-button {
+        font-size: 10px;
+        padding: 1px 2px;
+        margin-top: -2%;
+    }
+
+    .new-button>svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    /* --------------------------------------who-we-are-section----------------------------------- */
+
+    .who-we-are-section {
+        height: 100vh;
+    }
+
+
+    .who-we-are-section h1 {
+        margin-top: 7% !important;
+        font-size: 45px;
+        line-height: 30px;
+        font-weight: 700;
+        text-align: center;
+        color: #09043c;
+        position: relative;
+    }
+
+    .who-we-are-section h1::after {
+        content: "";
+        display: block;
+        width: 15%;
+        height: 5px;
+        /* Adjust the thickness of the underline */
+        background-color: var(--text-pink);
+        position: absolute;
+        bottom: 0;
+        left: 42%;
+        top: 150%;
+        transform: translateX(-0%);
+    }
+
+    .who-we-are-section .we-are-section-1 {
+        margin-top: 5%;
+        height: 100vh;
+    }
+
+    .who-we-are-section .we-are-section-1 p {
+        margin-top: 6%;
+        font-size: 18px;
+        max-width: 1250px;
+        line-height: 32px;
+        letter-spacing: normal;
+        font-stretch: normal;
+        font-weight: 500;
+        color: #222;
+        padding-right: 8%;
+    }
+
+    .who-we-are-section .we-are-section-2 {
+        margin-top: 5%;
+        height: 100vh;
+    }
+
+    .who-we-are-section .we-are-section-2 img {
+        height: 500px;
+        width: 70%;
+        border-radius: 30px;
+    }
+
+    /* ----------------------------------------------------process-section------------------------- */
+    .process-section {
+        margin-top: 25%;
+    }
+
+    .process-heading {
+        margin-top: 5% !important;
+        font-size: 45px;
+        line-height: 30px;
+    }
+
+    .process-heading::after {
+        width: 18%;
+        left: 41%;
+        top: 135%;
+    }
+
+    .process-card-section {
+        margin-top: 0%;
+    }
+
+    .process-card-clr {
+        height: 42vh;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+
+    .process-card {
+        margin-top: 0%;
+        margin-bottom: 3%;
+        transition: ease 1s;
+    }
+
+    .process-card:hover {
+        transform: scale(1.05);
+    }
+
+    .process-img {
+        width: 20%;
+        margin: 0 auto;
+        padding: 2%;
+    }
+
+
+    .process-desc {
+        margin: 20px auto 10px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .process-descrpt {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /* --------------------------our-culture-section------------------ */
+
+    .our-culture-section {
+        height: 80vh;
+        background-color: #09043c;
+        z-index: 100;
+        position: relative;
+        color: white;
+        margin-bottom: 5%;
+    }
+
+    .our-culture-section h1 {
+        font-size: 24px;
+        /* Adjust font size for medium screens */
+        line-height: 16px;
+        /* Adjust line height for medium screens */
+        margin-top: 9%;
+        /* Adjust margin for medium screens */
+    }
+
+    .our-culture-section p {
+        font-size: 12px;
+        /* Adjust font size for medium screens */
+        margin-top: 1%;
+        /* Adjust margin for medium screens */
+    }
+
+    .culture-card {
+        height: auto;
+        width: 85% !important;
+        height: auto;
+        top: 70%;
+        background-color: #f7f7fc;
+    }
+
+    .culture-card .main-heading {
+        font-size: 12px;
+        /* Adjust font size for medium screens */
+    }
+
+    .culture-card .description {
+        width: 80%;
+        font-size: 10px;
+        /* Adjust font size for medium screens */
+        margin-bottom: 3% !important;
+        /* Adjust margin for medium screens */
+    }
+
+
+    /* --------------------------------------------Process-we-follow-------------------------------- */
+
+    .heading {
+        font-size: 45px;
+        line-height: 30px;
+    }
+
+    .under-line {
+        --col-gap: 2rem;
+        --row-gap: 2rem;
+    }
+
+    .under-line li .date {
+        --dateH: 3rem;
+        font-size: 1.25rem;
+    }
+
+    .under-line li .date::before {
+        width: 2rem;
+    }
+
+    .under-line li .date::after {
+        width: 2rem;
+        border-width: 0.3rem;
+    }
+
+    .under-line li .title {
+        padding-block-start: 1.5rem;
+        padding-block-end: 1rem;
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .under-line li .descr {
+        padding-block-end: 1.5rem;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .under-line li .title::before {
+        bottom: calc(100% + 0.125rem);
+    }
+
+    .under-line li .descr::before {
+        bottom: 0.25rem;
+    }
+
+    /* ----------------------------------------------Patient-Recovery-Stories------------------------------ */
+
+
+    .patient-heading {
+        font-size: 45px;
+        line-height: 30px;
+    }
+
+
+    .patient-para {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+
+    /* -----------------testimonial section------------------- */
+    .testimonial-card {
+        padding: 10px;
+    }
+
+    .testimonial-card p {
+        padding-top: 20px;
+    }
+
+    .testi-para {
+        padding-top: 30px;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .testi-para::before,
+    .testi-para::after {
+        font-size: 20px;
+    }
+
+    /* -------------------about-us------------------- */
+
+    /* --------------------banner------------ */
+    .banner {
+        padding: 20px;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+
+    .banner p {
+        padding: 0 100px;
+        margin-bottom: 10%;
+        font-size: 22px;
+    }
+
+    /* --------------------------our-leadership-section------------------ */
+
+    .our-leadership-section {
+        height: 80vh;
+        z-index: 100;
+        position: relative;
+        background-color: #f7f7fc;
+        /* Change the background color as needed */
+        color: #222;
+        margin-bottom: 10%;
+    }
+
+    .our-leadership-section h1 {
+        font-size: 24px;
+        /* Adjust font size for medium screens */
+        line-height: 16px;
+        /* Adjust line height for medium screens */
+        margin-top: 9%;
+        /* Adjust margin for medium screens */
+    }
+
+    .our-leadership-section h1::after {
+        content: "";
+        display: block;
+        width: 15%;
+        height: 5px;
+        /* Adjust the thickness of the underline */
+        background-color: var(--text-pink);
+        position: absolute;
+        bottom: 0;
+        left: 43%;
+        top: 145%;
+        transform: translateX(-0%);
+    }
+
+    .our-leadership-section .leadership-section-desc .heading {
+        font-size: 45px;
+        line-height: 30px;
+    }
+
+    .our-leadership-section .leadership-section-desc .desc {
+        font-size: 18px;
+        padding-right: 0%;
+        line-height: 32px;
+    }
+
+    .our-leadership-section .leadership-section-desc p {
+        font-size: 18px;
+        padding-right: 0%;
+        line-height: 32px;
+    }
+
+    .our-leadership-section .leadership-section-desc b {
+        font-size: 18px;
+        padding-right: 0%;
+        line-height: 32px;
+    }
+
+    /* ---------------------------------------Comprehensive-section------------------------------------------------- */
+    .comprehensive-section {
+        margin-top: 10%;
+    }
+
+    .comprehensive-section h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .comprehensive-section p {
+        width: 100%;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .comprehensive-card-section h1 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .comprehensive-card-section p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /* ----------------------------------------------------Get-touch-section------------------------------------------ */
+    .get-touch-section {
+        height: auto;
+        margin: 2%;
+        border: 4px solid #f8f8f8;
+        border-radius: 20px;
+        padding: 5%;
+        padding-top: 4%;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+    .get-touch-section p {
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 4px;
+        font-weight: 900;
+        color: #ec2763;
+        margin-bottom: 5%;
+    }
+
+    .get-touch-section h1 {
+        font-size: 38px;
+        line-height: 60px;
+        text-align: center;
+        font-weight: 500;
+        color: #09043c;
+    }
+
+    .get-touch-section button {
+        margin-top: 4%;
+        width: 150px;
+        height: 40px;
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: 0.03rem;
+        line-height: 18px;
+        background-color: #fff;
+        color: #ec2763;
+        border-radius: 25px !important;
+        border: 2px solid #ec2763;
+    }
+
+    /* ----------------------------mindful-patients---------------------- */
+
+    .title_1 {
+        font-size: 45px;
+        line-height: 34px;
+    }
+
+    .title_1::after {
+        width: 20%;
+        left: 40%;
+        top: 105%;
+    }
+
+    .tip-section {
+        margin-top: 5%;
+    }
+
+    .service-card {
+        width: 85%;
+        border-radius: 30px;
+        margin-bottom: 8%;
+    }
+
+    .card .card-img-top img {
+        height: 200px;
+        width: 100%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .post-date {
+        font-size: 14px;
+    }
+
+    .patient_card_heading {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        height: 34px;
+        color: #ec2763;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 2%;
+    }
+
+    .patient_card_content {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        height: 67px;
+        font-size: 15px;
+    }
+
+
+    .read_button {
+        border-radius: 30px;
+        background-color: #09043c;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .read_button:hover {
+        border: 2px solid #09043c;
+        color: #ec2763;
+    }
+
+    .read_button1 {
+        border-radius: 30px;
+        background-color: #09043c;
+        color: white;
+    }
+
+    .read_button1:hover {
+        border: 2px solid #09043c;
+        color: #ec2763;
+    }
+
+    .post-date_1 {
+        font-size: 15px !important;
+        margin: -1px 0px 0px 0px;
+        padding-right: 8%;
+    }
+
+    /* --------------------------------blog-banner-section------------------------------ */
+
+    .blog-banner h1 {
+        font-size: 50px;
+    }
+
+    .blog-banner p {
+        font-size: 23px;
+        line-height: 36px;
+    }
+
+    /* ---------------------------tabs-sections-------------------- */
+
+    .tabcontent-card h1 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .tabcontent-card p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /* ---------------------------------------------------service-update-section------------------------------- */
+    .service-update-section {
+        margin-top: 2%;
+    }
+
+    .card-heading {
+        font-size: 36px;
+        line-height: 40px;
+        margin-top: 6%;
+        margin-bottom: 10%;
+    }
+
+    .card-heading::after {
+        width: 20%;
+        top: 140%;
+        left: 40%;
+    }
+
+    .card-section1 {
+        height: 450px;
+        margin-bottom: 12%;
+        width: 100%;
+    }
+
+    .card-section1:hover {
+        transform: scale(1);
+    }
+
+    .card-section2 {
+        height: 252px;
+        width: 75%;
+        top: 44%;
+        padding: 4%;
+    }
+
+    .card-section2 h1 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .card-section2 p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .new-button {
+        font-size: 14px;
+        padding: 3px 6px;
+        margin-top: -3%;
+    }
+
+    .new-button>svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    .our-culture-section {
+        height: 100vh;
+        background-color: #09043c;
+        z-index: 0;
+        position: relative;
+        /* Change the background color as needed */
+        color: white;
+    }
+
+    .our-culture-section h1 {
+        font-size: 36px;
+        line-height: 30px;
+        font-weight: 600;
+        padding-left: 7%;
+        padding-right: 8%;
+        margin-top: 8%;
+    }
+
+    .our-culture-section p {
+        margin-top: 2%;
+        font-size: 16px;
+        max-width: 1250px;
+        line-height: 1.64;
+        letter-spacing: normal;
+        font-stretch: normal;
+        font-weight: 500;
+        color: #222;
+        padding-left: 7%;
+        padding-right: 8%;
+        margin-top: 3%;
+    }
+
+    .culture-card {
+        width: 80% !important;
+        /* height: 90vh; */
+
+        /* margin-left: 10%;
+        margin-right: 10%; */
+        /* position: absolute; */
+        /* top: 98%; */
+        /* Adjust the value to position vertically */
+        /* left: 40%; */
+        /* Adjust the value to position horizontally */
+        transform: translate(-50%, -30%);
+        background-color: #f7f7fc;
+        /* Change the background color as needed */
+        padding: 20px;
+        border: 1px solid #ccc;
+        padding-top: 5%;
+        padding-left: 5% !important;
+        padding-bottom: 5% !important;
+    }
+
+    .culture-card img {
+        padding-left: 7%;
+    }
+
+    .culture-card .main-heading {
+        font-size: 16px;
+        line-height: normal;
+        letter-spacing: normal;
+        font-stretch: normal;
+        font-weight: 500;
+        color: #222;
+    }
+
+    .culture-card .description {
+        font-size: 14px;
+        color: #999999;
+        font-style: normal;
+        letter-spacing: normal;
+        font-stretch: normal;
+        line-height: 1.64;
+        font-weight: 500;
+        width: 320px;
+        margin-bottom: 15% !important;
+    }
+
+    /* -------------------about-us------------------- */
+
+    /* --------------------banner------------ */
+    .banner {
+        padding: 30px;
+    }
+
+    .banner h1 {
+        margin-top: 5%;
+        font-size: 55px;
+    }
+
+    .banner p {
+        padding: 0 150px;
+        margin-bottom: 8%;
+    }
+
+    /* ----------------------------------our-leadership-section---------------------- */
+    .our-leadership-section {
+        height: auto;
+        z-index: 0;
+        position: relative;
+        background-color: #f7f7fc;
+        /* Change the background color as needed */
+        color: #222;
+    }
+
+    .our-leadership-section h1 {
+        text-align: center;
+        margin-top: 7% !important;
+        font-size: 45px;
+        line-height: 30px;
+        font-weight: 700;
+        margin-top: 5%;
+        color: #09043c;
+        position: relative;
+    }
+
+    .our-leadership-section h1::after {
+        content: "";
+        display: block;
+        width: 15%;
+        height: 5px;
+        /* Adjust the thickness of the underline */
+        background-color: var(--text-pink);
+        position: absolute;
+        bottom: 0;
+        left: 43%;
+        top: 145%;
+        transform: translateX(-0%);
+    }
+
+    .our-leadership-section .leadership-section-desc .heading {
+        font-size: 45px;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .our-leadership-section .leadership-section-desc .desc {
+        font-size: 18px;
+        padding-right: 0%;
+        line-height: 32px;
+    }
+
+    .our-leadership-section .leadership-section-desc p {
+        font-size: 18px;
+        padding-right: 10%;
+        line-height: 32px;
+    }
+
+    .our-leadership-section .leadership-section-desc b {
+        font-size: 18px;
+        padding-right: 0%;
+        line-height: 32px;
+    }
+
+    /* ----------------------------------------------------Get-touch-section------------------------------------------ */
+    .get-touch-section {
+        height: auto;
+        margin: 2%;
+        border: 4px solid #f8f8f8;
+        border-radius: 20px;
+        padding: 3%;
+        padding-top: 4%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    .get-touch-section p {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        font-weight: 900;
+        color: #ec2763;
+        margin-bottom: 5%;
+    }
+
+    .get-touch-section h1 {
+        font-size: 26px;
+        line-height: 60px;
+        text-align: center;
+        font-weight: 600;
+        color: #09043c !important;
+    }
+
+    .get-touch-section button {
+        margin-top: 4%;
+        height: 40px;
+        width: 150px;
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: 0.03rem;
+        line-height: 18px;
+        background-color: #fff;
+        color: #ec2763;
+        border-radius: 25px !important;
+        border: 2px solid #ec2763;
+    }
+
+
+}

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha384-GLhlTQ8iN17Sme8k0I7Zf5n9MqSOovv+5O6unNTt/iRYbYjHpWWr12woJ2Imq" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./custom.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha384-GLhlTQ8iN17Sme8k0I7Zf5n9MqSOovv+5O6unNTt/iRYbYjHpWWr12woJ2Imq" crossorigin="anonymous">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Diabetes</title>
+</head>
+
+<body>
+    <!-- -----------------------------------------------------------navbar-section--------------------------------------------------------- -->
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light nav-bg">
+            <div class="container">
+                <a class="navbar-brand mx-md-0 mx-lg-3 mx-0" href="#"><img src="./images/logo-dr.png" alt="logo"
+                        style="height: 50px;"></a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-0 mb-lg-0" style="margin-left: 10px; font-weight: 600;">
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" aria-current="page" href="./index.html"
+                                data-lang="en:Home;te:హోం">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" href="./about.html"
+                                data-lang="en:About us;te:మాకు గురించి">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" href="./service.html"
+                                data-lang="en:Services;te:సేవలు">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" href="./patient.html"
+                                data-lang="en:Mindful Patients;te:మనస్తాపాలు">Mindful Patients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" href="./contact.html"
+                                data-lang="en:Contact Us;te:మాకు సంప్రదించండి">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 text-white" href="./blogs.html"
+                                data-lang="en:Blogs;te:బ్లాగులు‌">Blogs</a>
+                        </li>
+                        <li class="nav-item d-block d-lg-none">
+                            <a class="nav-link me-4 text-white" href="./appointment.htm l"
+                                data-lang="en:Book Appointment;te:బుక్ అపాయింట్‌">Book Appointment</a>
+                        </li>
+                        <li class="nav-item d-block d-lg-none">
+                            <button class="lang-btn">
+                                <select
+                                    style="background-color: #ec2763; border: none; outline: none; width: 50px; color: #fff;"
+                                    id="languageSelect" onchange="setLanguage(this.value)"">
+                                    <option class=" text-white" value="en">Eng</option>
+                                    <option class="text-white" value="te">Tel</option>
+                                </select>
+                            </button>
+                        </li>
+                    </ul>
+                    <button class="d-none d-lg-block nav-btn" id="appointmentBtn">
+                        <a class="nav-link text-white" href="#" ata-lang="en:Book Appointment;te:బుక్ అపాయింట్">Book
+                            Appointment</a>
+                    </button>
+                    <div class="nav-item" style="margin-right: -6%; font-size: 24px;">
+                        <a class="nav-link me-1 text-white" href="https://web.whatsapp.com/"><i
+                                class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="lang-btn d-none d-lg-block">
+                <select style="background-color: #ec2763; border: none; outline: none; width: 50px; color: #fff;"
+                    id="languageSelect" onchange="setLanguage(this.value)"">
+                    <option class=" text-white" value="en">Eng</option>
+                    <option class="text-white" value="te">Tel</option>
+                </select>
+            </button>
+        </nav>
+    </section>
+
+    <section>
+        <div class="appointment-form" id="appointmentForm">
+            <span class="close-icon" id="closeIcon">&times;</span>
+            <h2>Doctor Appointment Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}"><br>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required><br>
+                <label for="preferredDate">Preferred Date:</label>
+                <input type="date" id="preferredDate" name="preferredDate" required><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+     <!-- -----------------------------------------------------------Home-Banner-section--------------------------------------------------------- -->
+    <section id="banner">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/carousel-patients-1.jpg" class="d-block w-100" alt="banner-img-1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/carousel-patients-2.png" class="d-block w-100" alt="banner-img-2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/carousel-patients-3.png" class="d-block w-100" alt="banner-img-3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleControls"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- -----------------------------------------------------------Service-section--------------------------------------------------------- -->
+    <section>
+        <div class="main-content">
+            <section class="tip-section">
+                <div class="tip-content">
+                    <h1 class="title_1 text-center mt-5">
+                        Mindful Patients
+                    </h1>
+                    <div class="container mt-5 mb-4">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-sm-12 col-md-6 mb-4  d-flex justify-content-center">
+                                <div class="card service-card">
+                                    <div class="card-img-top">
+                                        <a href="">
+                                            <img src="./images/diabetes.png" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="patient_card_heading text-start">
+                                            Diet & Nutrition
+                                        </h4>
+                                        <p class="word_spacing patient_card_content">
+                                            Your diabetes diet is simply a healthy-eating plan that will help you
+                                            control your blood sugar. Here's help getting started, from meal planning to
+                                            counting carbohydrates.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="" class="pb-md-2 ms-md-3 pb-1 ms-1 text-blue post-date_1"><button
+                                                class="btn read_button">
+                                                Read More
+                                            </button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 col-md-6 mb-4  d-flex justify-content-center">
+                                <div class="card service-card">
+                                    <div class="card-img-top">
+                                        <a href="">
+                                            <img src="./images/diabetes.png" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="patient_card_heading text-start">
+                                            Diabetes Complications
+                                        </h4>
+                                        <p class="word_spacing patient_card_content">
+                                            Diabetes complications are related to the duration as well as control of
+                                            diabetes. Uncontrolled diabetes can affect each and every organ of the body
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="" class="pb-md-2 ms-md-3 pb-1 ms-1 text-blue post-date_1"><button
+                                                class="btn read_button">
+                                                Read More
+                                            </button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 col-md-6 mb-4  d-flex justify-content-center">
+                                <div class="card service-card">
+                                    <div class="card-img-top">
+                                        <a href="">
+                                            <img src="./images/diabetes.png" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="patient_card_heading text-start">
+                                            Psycho-Sexual Health
+                                        </h4>
+                                        <p class="word_spacing patient_card_content">
+                                            Diabetes mellitus is a common cause of sexual dysfunction in both men and
+                                            women. At the Centre for Diabetes Care, we understand the impact that
+                                            diabetes can have on psycho-sexual health.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="" class="pb-md-2 ms-md-3 pb-1 ms-1 text-blue post-date_1"><button
+                                                class="btn read_button">
+                                                Read More
+                                            </button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 col-md-6 mb-4  d-flex justify-content-center">
+                                <div class="card service-card">
+                                    <div class="card-img-top">
+                                        <a href="">
+                                            <img src="./images/diabetes.png" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="patient_card_heading text-start">
+                                            Vaccination in Diabetes
+                                        </h4>
+                                        <p class="word_spacing patient_card_content">
+                                            Diabetes can lower immunity, making it more challenging for the body to
+                                            fight off infections. Even with well-managed diabetes, the immune system may
+                                            still be compromised. Immunization plays a crucial role in providing
+                                            protection against vaccine-preventable diseases.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="" class="pb-md-2 ms-md-3 pb-1 ms-1 text-blue post-date_1"><button
+                                                class="btn read_button">
+                                                Read More
+                                            </button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 col-md-6 mb-4  d-flex justify-content-center">
+                                <div class="card service-card">
+                                    <div class="card-img-top">
+                                        <a href="">
+                                            <img src="./images/diabetes.png" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="patient_card_heading text-start">
+                                            Education and Support
+                                        </h4>
+                                        <p class="word_spacing patient_card_content">
+                                            Diabetes is recognized as a lifestyle disease. Lifestyle management is the
+                                            core of diabetes management. It includes Medical Nutrition Therapy (MNT),
+                                            Physical activity, Smoking cessation, Psychological and Social care.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="" class="pb-md-2 ms-md-3 pb-1 ms-1 text-blue post-date_1"><button
+                                                class="btn read_button">
+                                                Read More
+                                            </button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 col-md-6 mb-4  d-flex justify-content-center">
+                                <div class="card service-card">
+                                    <div class="card-img-top">
+                                        <a href="">
+                                            <img src="./images/diabetes.png" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="patient_card_heading text-start">
+                                            Diabetes Speciality Clinics
+                                        </h4>
+                                        <p class="word_spacing patient_card_content">
+                                            Diabetes has many faces and each patients is having some unique
+                                            characteristic. Diabetes in young, Diabetes in elderly, Diabetes in
+                                            Pregnancy are some of the prototypes with different needs and management
+                                            plans.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a href="" class="pb-md-2 ms-md-3 pb-1 ms-1 text-blue post-date_1"><button
+                                                class="btn read_button">
+                                                Read More
+                                            </button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- -----------------------------------------------------------footer-section--------------------------------------------------------- -->
+    <section>
+        <footer class="hero pb-3 pb-md-4 pt-3 pt-md-5">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-5 col-md-4">
+                        <div class="container__about ">
+                            <img src="./images/logo-dr.png" alt="" class="img-fluid footer-logo mb-0">
+                            <p class="footer-tag-line">Your Path to Longevity Begins Here!</p>
+                            <div class="icons">
+                                <a href="#" class="icon1 icon--instagram  text-decoration-none">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="icon1 icon--twitter  text-decoration-none">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="icon1 icon--linkedin  text-decoration-none">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="icon1 icon--linkedin  text-decoration-none">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-2 col-md-2  col-5">
+                        <div class="container__recentpages">
+                            <h2 class="footer-heading">Links</h2>
+                            <ul class="list-unstyled">
+                                <li><a class="footer-links" href="./index.html">Home </a></li>
+                                <li><a class="footer-links" href="./about.html">About Us</a></li>
+                                <li><a class="footer-links" href="./service.html">Services</a></li>
+                                <li><a class="footer-links" href="./patient.html">Patient Education</a></li>
+                                <li><a class="footer-links" href="./contact.html">Contact us</a></li>
+                                <li><a class="footer-links" href="./blogs.html">Blogs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3  col-7">
+                        <div class="container__more">
+                            <h2 class="footer-heading">Services</h2>
+                            <ul class="list-unstyled">
+                                <li><a class="footer-links" href=''>Diabetic Foot Clinic</a></li>
+                                <li><a class="footer-links" href="'">Cholesterol Control Clinic</a></li>
+                                <li><a class="footer-links" href="">Hypertension Clinic</a></li>
+                                <li><a class="footer-links" href="">Retinopathy Clinic</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12">
+
+                        <h2 class="footer-heading ">Get In Touch</h2>
+                        <p class="footer-links m-0 ">Kurnool, Andhra Pradesh.</p>
+                        <p class="footer-links m-0"> Phone:
+
+                        </p>
+                        <p class="footer-links m-0"><a class="footer-links" href="">info@gmail.com</a></p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="line__separete"></div>
+            </div>
+
+            <div class="by d-flex container text-center  mx-auto">
+                <p class="order-1 order-md-0 py-3 py-md-0"> @2024 KraftBees Technologies Private
+                    Limited. all rights reserved</p>
+
+            </div>
+
+        </footer>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="path/to/jquery.min.js"></script>
+
+    <!-- Bootstrap JS Bundle (includes Popper.js) -->
+    <script src="path/to/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#carouselExampleInterval').carousel();
+        });
+    </script>
+
+    <script>
+        function setLanguage(lang) {
+            // Get all elements that need their content to be changed based on language
+            var elementsToTranslate = document.querySelectorAll('[data-lang]');
+
+            // Iterate over each element and update its content based on the selected language
+            elementsToTranslate.forEach(function (element) {
+                var translations = element.dataset.lang.split(';');
+                translations.forEach(function (translation) {
+                    var parts = translation.split(':');
+                    if (parts.length === 2) {
+                        if (parts[0] === lang) {
+                            element.innerHTML = parts[1];
+                        }
+                    }
+                });
+            });
+
+            // Optionally, you can also set the document language attribute
+            document.documentElement.lang = lang;
+
+            var language = document.getElementById("languageSelect").value;
+            if (language === "en") {
+                document.getElementById("headingEnglish").style.display = "block";
+                document.getElementById("headingTelugu").style.display = "none";
+                document.getElementById("textEnglish").style.display = "block";
+                document.getElementById("textTelugu").style.display = "none";
+            } else if (language === "te") {
+                document.getElementById("headingEnglish").style.display = "none";
+                document.getElementById("headingTelugu").style.display = "block";
+                document.getElementById("textEnglish").style.display = "none";
+                document.getElementById("textTelugu").style.display = "block";
+            }
+        }
+
+
+    </script>
+
+    <script>
+        // JavaScript to toggle the visibility of the appointment form
+        const appointmentBtn = document.getElementById('appointmentBtn');
+        const appointmentForm = document.getElementById('appointmentForm');
+        const closeIcon = document.getElementById('closeIcon');
+
+        appointmentBtn.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default behavior of the link
+            appointmentForm.style.display = 'block';
+        });
+
+        closeIcon.addEventListener('click', function () {
+            appointmentForm.style.display = 'none';
+        });
+    </script>
+
+
+</body>
+
+</html>
